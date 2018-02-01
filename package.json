@@ -1,0 +1,15 @@
+{
+  "name": "bhp-ui",
+  "version": "0.0.1",
+  "main": "index.js",
+  "peerDependencies": {
+    "bootstrap": "4.0.0",
+    "material-design-icons": "3.0.1"
+  },
+  "scripts": {
+    "build": "node-sass -r scss/ -o css/"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

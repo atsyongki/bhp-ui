@@ -1,0 +1,7 @@
+@import 'themes/light';
+@import '0-root';
+@import '1-base';
+
+.light-theme {
+  @import '2-within-theme';
+}

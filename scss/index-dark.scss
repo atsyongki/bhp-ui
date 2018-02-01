@@ -1,0 +1,7 @@
+@import 'themes/dark';
+@import '0-root';
+@import '1-base';
+
+.dark-theme {
+  @import '2-within-theme';
+}

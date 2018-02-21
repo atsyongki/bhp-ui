@@ -1,5 +1,6 @@
 @import 'shared-before';
 
 $body-color: #333;
+$body-bg: map-get($colors, off-white);
 
 @import 'shared-after';

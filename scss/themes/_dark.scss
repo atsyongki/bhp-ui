@@ -3,7 +3,7 @@
 $secondary: $gray-200;
 
 $body-color: white;
-$body-bg: #333;
+$body-bg: map-get($bhp-colors, bhp-dt-gray-2);
 
 $pre-color: $gray-200;
 
@@ -42,5 +42,5 @@ $popover-bg: $gray-700;
 $popover-border-color: $gray-700;
 
 $tooltip-bg: $gray-900;
-
+$hr-border-color: $gray-400;
 @import 'shared-after';

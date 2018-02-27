@@ -16,43 +16,80 @@ $gray-750: #434857;
 $gray-800: #2A2D33;
 $gray-900: #212529;
 
+$bhp_orange_1: #dd5900;
+$bhp_orange_2: #f77f00;
+$bhp_orange_3: #fcba5e;
+$bhp_orange_4: #ffd691;
+$bhp_purple_1: #663366;
+$bhp_purple_2: #993399;
+$bhp_purple_3: #cc6699;
+$bhp_purple_4: #e8e0e8;
+$bhp_blue_1: #1d4f91;
+$bhp_blue_2: #0a6cb4;
+$bhp_blue_3: #0099cc;
+$bhp_blue_4: #d7ebff;
+$bhp_turquoise_1: #01515f;
+$bhp_turquoise_2: #007E98;
+$bhp_turquoise_3: #6ec9da;
+$bhp_turquoise_4: #cee9ef;
+$bhp_green_1: #035d55;
+$bhp_green_2: #06ad96;
+$bhp_green_3: #abcc66;
+$bhp_green_4: #e0e9af;
+$bhp_blue_grey_1: #2b5368;
+$bhp_blue_grey_2: #45768b;
+$bhp_blue_grey_3: #6ba4b8;
+$bhp_blue_grey_4: #bfced6;
+$bhp_grey_1: #252525;
+$bhp_grey_2: #666666;
+$bhp_grey_3: #b7b9bb;
+$bhp_grey_4: #e7e2d5;
+$bhp_dt_gray_1: #494A58;
+$bhp_dt_gray_2: #353544;
+$bhp_dt_gray_3: #60606D;
+$bhp_dt_gray_4: #525361;
+$bhp_dt_gray_5: #5E5E6B;
+$bhp_dt_gray_6: #C8C8C8;
+$bhp_dt_gray_7: #3F414E;
+$bhp_dt_gray_8: #767684;
+
 $bhp-colors: (
-        bhp-orange-1: #dd5900,
-        bhp-orange-2: #f77f00,
-        bhp-orange-3: #fcba5e,
-        bhp-orange-4: #ffd691,
-        bhp-purple-1: #663366,
-        bhp-purple-2: #993399,
-        bhp-purple-3: #cc6699,
-        bhp-purple-4: #e8e0e8,
-        bhp-blue-1: #1d4f91,
-        bhp-blue-2: #0a6cb4,
-        bhp-blue-3: #0099cc,
-        bhp-blue-4: #d7ebff,
-        bhp-turquoise-1: #01515f,
-        bhp-turquoise-2: #007E98,
-        bhp-turquoise-3: #6ec9da,
-        bhp-turquoise-4: #cee9ef,
-        bhp-green-1: #035d55,
-        bhp-green-2: #06ad96,
-        bhp-green-3: #abcc66,
-        bhp-green-4: #e0e9af,
-        bhp-blue-grey-1: #2b5368,
-        bhp-blue-grey-2: #45768b,
-        bhp-blue-grey-3: #6ba4b8,
-        bhp-blue-grey-4: #bfced6,
-        bhp-grey-1: #252525,
-        bhp-grey-2: #666666,
-        bhp-grey-3: #b7b9bb,
-        bhp-grey-4: #e7e2d5,
-        bhp-dt-gray-1: #494A58,
-        bhp-dt-gray-2: #353544,
-        bhp-dt-gray-3: #60606D,
-        bhp-dt-gray-4: #525361,
-        bhp-dt-gray-5: #5E5E6B,
-        bhp-dt-gray-6: #C8C8C8,
-        bhp-dt-gray-7: #3F414E,
-        bhp-dt-gray-8: #767684,
+        bhp-orange-1: $bhp_orange_1,
+        bhp-orange-2: $bhp_orange_2,
+        bhp-orange-3: $bhp_orange_3,
+        bhp-orange-4: $bhp_orange_4,
+        bhp-purple-1: $bhp_purple_1,
+        bhp-purple-2: $bhp_purple_2,
+        bhp-purple-3: $bhp_purple_3,
+        bhp-purple-4: $bhp_purple_4,
+        bhp-blue-1: $bhp_blue_1,
+        bhp-blue-2: $bhp_blue_2,
+        bhp-blue-3: $bhp_blue_3,
+        bhp-blue-4: $bhp_blue_4,
+        bhp-turquoise-1: $bhp_turquoise_1,
+        bhp-turquoise-2: $bhp_turquoise_2,
+        bhp-turquoise-3: $bhp_turquoise_3,
+        bhp-turquoise-4: $bhp_turquoise_4,
+        bhp-green-1: $bhp_green_1,
+        bhp-green-2: $bhp_green_2,
+        bhp-green-3: $bhp_green_3,
+        bhp-green-4: $bhp_green_4,
+        bhp-blue-grey-1: $bhp_blue_grey_1,
+        bhp-blue-grey-2: $bhp_blue_grey_2,
+        bhp-blue-grey-3: $bhp_blue_grey_3,
+        bhp-blue-grey-4: $bhp_blue_grey_4,
+        bhp-grey-1: $bhp_grey_1,
+        bhp-grey-2: $bhp_grey_2,
+        bhp-grey-3: $bhp_grey_3,
+        bhp-grey-4: $bhp_grey_4,
+        bhp-dt-gray-1: $bhp_dt_gray_1,
+        bhp-dt-gray-2: $bhp_dt_gray_2,
+        bhp-dt-gray-3: $bhp_dt_gray_3,
+        bhp-dt-gray-4: $bhp_dt_gray_4,
+        bhp-dt-gray-5: $bhp_dt_gray_5,
+        bhp-dt-gray-6: $bhp_dt_gray_6,
+        bhp-dt-gray-7: $bhp_dt_gray_7,
+        bhp-dt-gray-8: $bhp_dt_gray_8,
 );
 
 $theme-colors: map-merge($bhp-colors, (

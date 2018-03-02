@@ -12,7 +12,8 @@ yarn add bhp-ui
 ```
 
 to install this library. The required peer dependencies for the package
-(currently only bootstrap) will be listed, so install those too.
+(currently bootstrap and material-design-icons) will be listed, so install
+those too.
 
 You can now reference the compiled CSS files in the `css` directory, or access
 the SCSS directly via the `scss` directory.

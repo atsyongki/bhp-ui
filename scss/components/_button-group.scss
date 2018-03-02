@@ -1,0 +1,14 @@
+.btn-outline-secondary:not(:disabled):not(.disabled) {
+    &.focus,
+    &:focus {
+        color: #fff;
+        background-color: $gray-600;
+        border-color: $gray-600;
+        box-shadow: unset;
+    }
+    &.hover,
+    &:hover {
+        background-color: $gray-300;
+        color: $gray-600;
+    }
+}

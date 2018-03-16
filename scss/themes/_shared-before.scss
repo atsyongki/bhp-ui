@@ -20,6 +20,16 @@ $gray-750: #434857;
 $gray-800: #2A2D33;
 $gray-900: #212529;
 
+// Dark Theme Colours (Needs to be polished)
+$bhp_dt_gray_1: #494A58;
+$bhp_dt_gray_2: #353544;
+$bhp_dt_gray_3: #60606D;
+$bhp_dt_gray_4: #525361;
+$bhp_dt_gray_5: #5E5E6B;
+$bhp_dt_gray_6: #C8C8C8;
+$bhp_dt_gray_7: #3F414E;
+$bhp_dt_gray_8: #767684;
+
 // Utilities Colours
 $black:       $gray-900;
 $white:       #fff;
@@ -89,14 +99,14 @@ $bhp-colors: (
   bhp-grey-2: $bhp_grey_2,
   bhp-grey-3: $bhp_grey_3,
   bhp-grey-4: $bhp_grey_4,
-  //bhp-dt-gray-1: $bhp_dt_gray_1,
-  //bhp-dt-gray-2: $bhp_dt_gray_2,
-  //bhp-dt-gray-3: $bhp_dt_gray_3,
-  //bhp-dt-gray-4: $bhp_dt_gray_4,
-  //bhp-dt-gray-5: $bhp_dt_gray_5,
-  //bhp-dt-gray-6: $bhp_dt_gray_6,
-  //bhp-dt-gray-7: $bhp_dt_gray_7,
-  //bhp-dt-gray-8: $bhp_dt_gray_8,
+  bhp-dt-gray-1: $bhp_dt_gray_1,
+  bhp-dt-gray-2: $bhp_dt_gray_2,
+  bhp-dt-gray-3: $bhp_dt_gray_3,
+  bhp-dt-gray-4: $bhp_dt_gray_4,
+  bhp-dt-gray-5: $bhp_dt_gray_5,
+  bhp-dt-gray-6: $bhp_dt_gray_6,
+  bhp-dt-gray-7: $bhp_dt_gray_7,
+  bhp-dt-gray-8: $bhp_dt_gray_8,
 );
 
 // Theme Colours

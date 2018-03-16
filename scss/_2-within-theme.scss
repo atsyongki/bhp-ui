@@ -1,6 +1,6 @@
-// Bootstrap requirements and components
-@import 'reboot-within-theme';
+// Bootstrap Requirements and Components
 @import 'node_modules/bootstrap/scss/root';
+@import 'node_modules/bootstrap/scss/reboot';
 @import 'node_modules/bootstrap/scss/type';
 @import 'node_modules/bootstrap/scss/images';
 @import 'node_modules/bootstrap/scss/code';
@@ -31,9 +31,8 @@
 @import 'node_modules/bootstrap/scss/carousel';
 @import 'node_modules/bootstrap/scss/utilities';
 
-@import 'type';
-
-// Components
+// BHP Custom Components and Styling
+@import 'components/type';
 @import 'components/accordion';
 @import 'components/floating-badge';
 @import 'components/md-icon';

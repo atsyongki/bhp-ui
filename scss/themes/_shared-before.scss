@@ -125,19 +125,22 @@ $colors: (
 
 $link-color: map-get($theme-colors, bhp-blue-3);
 
+// Pagination
 $pagination-bg: none;
 $pagination-border-width: 0;
 $pagination-active-color: map-get($theme-colors, primary);
 $pagination-active-color: map-get($theme-colors, primary);
 $pagination-active-bg: none;
 
+// Nav Tabs
 $nav-tabs-border-radius: 0;
-$nav-link-padding-y: .4rem;
-$nav-tabs-link-active-border-width: 2px;
-$nav-tabs-link-active-border-color: map-get($bhp-colors, bhp-blue-3);
+$nav-tabs-link-hover-border-width: 4px;
+$nav-tabs-link-active-border-width: 4px;
+$nav-tabs-link-active-border-color: map-get($bhp-colors, bhp-orange-1);
+$nav-tabs-link-active-bg: transparent;
+//$btn-disabled-opacity: 0.2;
 
-$btn-disabled-opacity: 0.3;
-
+// Toogle Switch
 $toggle-switch-padding: 1px;
 $toggle-switch-border-width: 1px;
 $toggle-switch-outer-height: 28px;
@@ -146,6 +149,7 @@ $toggle-switch-font-size: 0.75rem;
 //$progress-height: 1.25rem;
 //$progress-font-size: $font-size-base;
 
+// Spinner
 $spinner-size: 4rem;
 $spinner-size-sm: 2rem;
 $spinner-size-lg: 6rem;

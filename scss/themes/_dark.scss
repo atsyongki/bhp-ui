@@ -2,15 +2,13 @@
 
 $secondary: $gray-200;
 
-$body-color: white;
+$body-color: $white;
 $body-bg: map-get($bhp-colors, bhp-dt-gray-2);
 
 $pre-color: $gray-200;
 
 $list-group-bg: $body-bg;
 $list-group-border-color: $gray-600;
-
-$nav-tabs-link-active-color: $body-color;
 
 // This is combined with an override to make text-muted have opacity 0.5
 $text-muted: $body-color;

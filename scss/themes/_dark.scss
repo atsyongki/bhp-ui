@@ -185,6 +185,7 @@ $yiq-text-light:            $white !default;
 
 $body-bg:             $gray-900;
 $body-color:          $white;
+
 // Links
 //
 // Style anchor elements.
@@ -208,9 +209,9 @@ $border-radius-sm:            .2rem !default;
 $component-active-color:      $white !default;
 $component-active-bg:         theme-color("primary") !default;
 
-$headings-color:                 $gray-100;
+$headings-color:              $gray-100;
 
-$text-muted:                  $gray-600 !default;
+$text-muted:                  $white !default;
 
 $blockquote-small-color:      $gray-600 !default;
 

@@ -6,30 +6,39 @@ $font-size-xs: .875rem  !default;
 //$border-radius-xs: .2rem !default;
 //$btn-border-radius-xs: $border-radius-xs !default;
 
-// Generic Colours
-$gray-100: #f9f9f9;
-$gray-200: #f3f3f3;
-$gray-300: #ececec;
-$gray-400: #dddddd;
-$gray-500: #a5a5a5;
-$gray-600: #7e7e7e;
-$gray-700: #4a4a4a;
-$gray-750: #434857;
-$gray-800: #2A2D33;
-$gray-900: #212529;
+// MES Dark Theme Colours
+//$bhp_dt_gray_4: #525361;
+//$bhp_dt_gray_6: #C8C8C8;
+//$bhp_dt_gray_8: #767684;
+//$bhp_dt_gray_3: #60606D;
+//$bhp_dt_gray_5: #5E5E6B;
+//$bhp_dt_gray_1: #494A58;
+//$bhp_dt_gray_7: #3F414E;
+//$bhp_dt_gray_2: #353544;
 
-// Dark Theme Colours (Needs to be polished)
-$bhp_dt_gray_1: #494A58;
-$bhp_dt_gray_2: #353544;
-$bhp_dt_gray_3: #60606D;
-$bhp_dt_gray_4: #525361;
-$bhp_dt_gray_5: #5E5E6B;
-$bhp_dt_gray_6: #C8C8C8;
-$bhp_dt_gray_7: #3F414E;
-$bhp_dt_gray_8: #767684;
+// Dark Theme Colours Combined
+//$gray-100: #EBEBEB;
+//$gray-200: $bhp_dt_gray_4;
+//$gray-300: $bhp_dt_gray_6;
+//$gray-400: $bhp_dt_gray_8;
+//$gray-500: $bhp_dt_gray_3;
+//$gray-600: $bhp_dt_gray_5;
+//$gray-700: $bhp_dt_gray_1;
+//$gray-800: $bhp_dt_gray_7;
+//$gray-900: $bhp_dt_gray_2;
+
+// Dark Theme Colours Combined
+//$bhp_dt_gray_4: $gray-200;
+//$bhp_dt_gray_6: $gray-300;
+//$bhp_dt_gray_8: $gray-400;
+//$bhp_dt_gray_3: $gray-500;
+//$bhp_dt_gray_5: $gray-600;
+//$bhp_dt_gray_1: $gray-700;
+//$bhp_dt_gray_7: $gray-800;
+//$bhp_dt_gray_2: $gray-900;
 
 // Utilities Colours
-$black:       $gray-900;
+$black:       #222;
 $white:       #fff;
 $off_white:   #fcfcfc;
 $dark_red:    #AC3D12;
@@ -97,14 +106,25 @@ $bhp-colors: (
   bhp-grey-2: $bhp_grey_2,
   bhp-grey-3: $bhp_grey_3,
   bhp-grey-4: $bhp_grey_4,
-  bhp-dt-gray-1: $bhp_dt_gray_1,
-  bhp-dt-gray-2: $bhp_dt_gray_2,
-  bhp-dt-gray-3: $bhp_dt_gray_3,
-  bhp-dt-gray-4: $bhp_dt_gray_4,
-  bhp-dt-gray-5: $bhp_dt_gray_5,
-  bhp-dt-gray-6: $bhp_dt_gray_6,
-  bhp-dt-gray-7: $bhp_dt_gray_7,
-  bhp-dt-gray-8: $bhp_dt_gray_8,
+
+  //bhp-dt-gray-1: $bhp_dt_gray_1,
+  //bhp-dt-gray-2: $bhp_dt_gray_2,
+  //bhp-dt-gray-3: $bhp_dt_gray_3,
+  //bhp-dt-gray-4: $bhp_dt_gray_4,
+  //bhp-dt-gray-5: $bhp_dt_gray_5,
+  //bhp-dt-gray-6: $bhp_dt_gray_6,
+  //bhp-dt-gray-7: $bhp_dt_gray_7,
+  //bhp-dt-gray-8: $bhp_dt_gray_8,
+
+  //gray-100: $gray-100,
+  //gray-200: $gray-200,
+  //gray-300: $gray-300,
+  //gray-400: $gray-400,
+  //gray-500: $gray-500,
+  //gray-600: $gray-600,
+  //gray-700: $gray-700,
+  //gray-800: $gray-800,
+  //gray-900: $gray-900,
 );
 
 // Theme Colours

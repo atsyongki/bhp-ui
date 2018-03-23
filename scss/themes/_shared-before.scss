@@ -18,7 +18,7 @@ $font-size-xs: .875rem;
   }
 }
 
-// Utilities Colours
+// Color system
 $white: #fff;
 $red: #ee5f5b;
 $green: #5cb85c;
@@ -87,7 +87,7 @@ $bhp-colors: (
   bhp-grey-4: $bhp_grey_4,
 );
 
-// Theme Colours
+// Color system
 $theme-colors: map-merge($theme-colors, (
   "primary":    $bhp-orange-1,
   "success":    $green,
@@ -95,7 +95,6 @@ $theme-colors: map-merge($theme-colors, (
   "warning":    $yellow,
   "danger":     $red,
 ));
-
 $colors: (
   off-white: $off_white,
 );

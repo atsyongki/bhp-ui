@@ -1,6 +1,6 @@
 @import 'shared-before';
 
-// Gray scale
+// Color system
 $gray-100: #EBEBEB;
 $gray-200: #C8C8C8;
 $gray-300: #767684;
@@ -11,21 +11,27 @@ $gray-700: #494A58;
 $gray-800: #3F414E;
 $gray-900: #353544;
 
-// reset gray subtle
-$gray-subtle: $gray-300;
-$fa-inverse_color: $body-color;
+// Body
+$body-bg:             $gray-900;
+$body-color:          $white;
+
+// Links
+$link-color:                $bhp_blue_4;
+$link-hover-color:          lighten($link-color, 15%);
+
+// Components
+$border-color:                $gray-300 !default;
+$component-active-color:      $white !default;
+
+// Fonts
+$headings-color:                 $white;
+$hr-border-color:             rgba($white, .1);
 
 // Scaffolding
-$body-bg:             $gray-800;
-$body-color:          $white;
+$gray-subtle: $gray-300;
+$fa-inverse_color: $body-color;
 $text-color:          $white;
 $btn-secondary-color: $gray-700;
-
-// Typography
-$headings-color:                 $white;
-//$code-bg:                        darken($body-bg, 5%);
-//$blockquote-border-color:        $gray-800;
-$hr-border-color:                $white;
 
 // Tables
 $table-bg-accent:                $gray-800;
@@ -42,19 +48,28 @@ $input-border-focus:             $white;
 $input-group-addon-bg:           lighten($gray-900, 18%);
 $input-group-addon-border-color: transparent;
 $input-color-placeholder:        $gray-300;
+$custom-select-color:         $text-color;
+$custom-select-bg:            $gray-800;
+$custom-select-disabled-bg:   darken($gray-800, 10%);
 
-// Thumbnails
-$thumbnail-bg:                   transparent;
-$thumbnail-border:               lighten($gray-900, 5%);
+$custom-control-indicator-bg: $gray-800;
 
-// Jumbotron
-$jumbotron-bg:                   darken($gray-900, 5%);
+// Form validation
+$form-feedback-valid-color:         theme-color("success") !default;
+$form-feedback-invalid-color:       theme-color("danger") !default;
 
-// Badges
-$badge-color:                    $gray-900;
-
-// Progress bars
-$progress-bg:                    $gray-800;
+// Dropdowns
+$dropdown-bg:                       $white !default;
+$dropdown-border-color:             rgba($black, .15) !default;
+$dropdown-divider-bg:               $gray-200 !default;
+$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
+$dropdown-link-color:               $gray-900 !default;
+$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
+$dropdown-link-hover-bg:            $gray-100 !default;
+$dropdown-link-active-color:        $component-active-color !default;
+$dropdown-link-active-bg:           $component-active-bg !default;
+$dropdown-link-disabled-color:      $gray-600 !default;
+$dropdown-header-color:             $gray-600 !default;
 
 // Navs
 $nav-link-hover-bg:                         $gray-800;
@@ -88,12 +103,43 @@ $pagination-disabled-color:            $gray-700;
 $pagination-disabled-bg:               transparent;
 $pagination-disabled-border:           $gray-800;
 
-// Breadcrumbs
-$breadcrumb-bg:                        lighten($gray-900, 5%);
-$breadcrumb-active-color:              $component-active-color;
+// Jumbotron
+$jumbotron-bg:                      darken($gray-900, 5%);
+
+// Cards
+$card-border-color:                 rgba($black, .125);
+$card-cap-bg:                       rgba($black, .03);
+$card-bg:                           $gray-600;
+
+// Tooltips
+$tooltip-color: $black;
+$tooltip-bg: $white;
+
+// Popovers
+$popover-bg:                        $black ;
+$popover-border-color:              rgba($white, .2);
+$popover-header-bg:                 lighten($popover-bg, 3%);
+$popover-header-color:              $headings-color !default;
+$popover-body-color:                $body-color !default;
+$popover-arrow-color:               $popover-bg !default;
+$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
+
+// Badges
+$badge-color: $body-bg;
+$badge-bg: $white;
+
+// Modals
+$modal-content-bg:                  $body-bg;
+$modal-content-border-color:        rgba($black, .2);
+$modal-backdrop-bg:                 $black;
+$modal-header-border-color:         rgba($black, .2);
+$modal-footer-border-color:         $modal-header-border-color;
+
+// Progress bars
+$progress-bg:                       $gray-800;
 
 // List groups
-$list-group-bg:                        transparent;
+//$list-group-bg:                        transparent;
 $list-group-border:                    $gray-800;
 $list-group-hover-bg:                  $gray-800;
 $list-group-action-color:              $gray-300;
@@ -106,69 +152,30 @@ $list-group-active-text-color:         lighten($list-group-active-bg, 40%);
 $list-group-disabled-color:            $gray-700;
 $list-group-disabled-bg:               transparent;
 $list-group-disabled-text-color:       inherit;
-$list-group-border-color:              #434857;
-
-// Tooltips
-$tooltip-arrow-color: $white;
-
-$thumbnail-bg:           transparent;
-$thumbnail-border-color: lighten($gray-900, 5%);
-
-$badge-color: $body-bg;
-$badge-bg: $white;
-
-$btn-toolbar-divider-bg:      $gray-800;
-
-$custom-select-color:         $text-color;
-$custom-select-bg:            $gray-800;
-$custom-select-disabled-bg:   darken($gray-800, 10%);
-
-$custom-control-indicator-bg: $gray-800;
-$hr-divider-content-color:   $gray-500;
-$hr-divider-content-bg:      $gray-900;
-$hr-divider-before-bg:       $gray-800;
-
-$nav-header-color:                $gray-700;
-$nav-tabs-border-color:           $gray-900;
-$nav-bordered-color-active:       theme-color("primary");
-$nav-bordered-color:              $white;
+//$list-group-border-color:              #434857;
 
 $list-group-header-color:  $white;
 $list-group-border:        $gray-800;
 
-$tooltip-bg: $white;
-$tooltip-color: $body-bg;
+$list-group-bg:                     $gray-700 !default;
+$list-group-border-color:           transparent !default;
 
-$statlist-border-color: $gray-800;
-$statlist-link-color:   $white;
-$statlist-progress-bg:  lighten($body-bg, 5%);
+// Image Thumbnails
+//$thumbnail-bg:                   transparent;
+$thumbnail-border:               lighten($gray-900, 5%);
 
-$sidebar-toggler-color: $gray-800;
+// Breadcrumbs
+$breadcrumb-bg:                     $gray-200 !default;
+$breadcrumb-divider-color:          $gray-600 !default;
+$breadcrumb-active-color:           $gray-600 !default;
+$breadcrumb-bg:                        lighten($gray-900, 5%);
+$breadcrumb-active-color:              $component-active-color;
 
-$dashhead-toolbar-divider-bg: $gray-800;
-$dashhead-subtitle-color: $gray-800;
+// Close
+$close-color:                       $white;
+$close-text-shadow:                 0 1px 0 $black;
 
-$iconav-bg:                 lighten($gray-900, 5%);
-$iconav-brand-bg:           darken($gray-900, 10%);
-$iconav-brand-color:        $gray-500;
-$iconav-brand-hover-color:  $gray-300;
-$iconav-link-border:        $gray-900;
-$iconav-link-active-bg:     $gray-900;
-
-$sidebar-brand-color:       $gray-700;
-$sidebar-brand-hover-color: $gray-500;
-
-// Modals
-
-$modal-content-bg:                  $body-bg;
-//$modal-header-border-color:         rgba(0,0,0,.2) !default;
-
-// Cards
-
-$card-cap-bg:                       $table-hover-bg !default;
-$card-bg:                           $gray-900;
-
-
+$fa-inverse_color: $dark;
 
 @import 'shared-after';
 

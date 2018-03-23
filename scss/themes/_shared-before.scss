@@ -2,45 +2,8 @@
 $font-family-base: 'Roboto', Arial, sans-serif;
 $font-size-xs: .875rem;
 
-// OBSOLETE
-//$border-radius-xs: .2rem;
-//$btn-border-radius-xs: $border-radius-xs;
-
-// MES Dark Theme Colours
-//$bhp_dt_gray_4: #525361;
-//$bhp_dt_gray_6: #C8C8C8;
-//$bhp_dt_gray_8: #767684;
-//$bhp_dt_gray_3: #60606D;
-//$bhp_dt_gray_5: #5E5E6B;
-//$bhp_dt_gray_1: #494A58;
-//$bhp_dt_gray_7: #3F414E;
-//$bhp_dt_gray_2: #353544;
-
-// Dark Theme Colours Combined
-//$gray-100: #EBEBEB;
-//$gray-200: $bhp_dt_gray_4;
-//$gray-300: $bhp_dt_gray_6;
-//$gray-400: $bhp_dt_gray_8;
-//$gray-500: $bhp_dt_gray_3;
-//$gray-600: $bhp_dt_gray_5;
-//$gray-700: $bhp_dt_gray_1;
-//$gray-800: $bhp_dt_gray_7;
-//$gray-900: $bhp_dt_gray_2;
-
-// Dark Theme Colours Combined
-//$bhp_dt_gray_4: $gray-200;
-//$bhp_dt_gray_6: $gray-300;
-//$bhp_dt_gray_8: $gray-400;
-//$bhp_dt_gray_3: $gray-500;
-//$bhp_dt_gray_5: $gray-600;
-//$bhp_dt_gray_1: $gray-700;
-//$bhp_dt_gray_7: $gray-800;
-//$bhp_dt_gray_2: $gray-900;
-
 // Utilities Colours
-//$black: #222;
 $white: #fff;
-//$off_white:   #FAFBFC;
 $red: #ee5f5b;
 $green: #5cb85c;
 $yellow: #f0ad4e;
@@ -105,27 +68,13 @@ $bhp-colors: (
   bhp-grey-2: $bhp_grey_2,
   bhp-grey-3: $bhp_grey_3,
   bhp-grey-4: $bhp_grey_4,
-
   red: $red,
   green: $red,
   yellow: $yellow,
   blue: $blue,
-
-  //gray-100: $gray-100,
-  //gray-200: $gray-200,
-  //gray-300: $gray-300,
-  //gray-400: $gray-400,
-  //gray-500: $gray-500,
-  //gray-600: $gray-600,
-  //gray-700: $gray-700,
-  //gray-800: $gray-800,
-  //gray-900: $gray-900,
 );
 
 // Theme Colours
-//$theme-colors: map-merge($bhp-colors, (
-//  primary: $bhp-orange-1
-//));
 $theme-colors: map-merge($theme-colors, (
   "primary":    $bhp-orange-1,
   "success":    $green,
@@ -136,23 +85,19 @@ $theme-colors: map-merge($theme-colors, (
 
 $blue: map-get($bhp-colors, bhp-blue-3);
 
-$colors: (
-  //off-white: $off_white,
-);
-
 // Pagination
-$pagination-bg: none;
-$pagination-border-width: 0;
+//$pagination-bg: none;
+//$pagination-border-width: 0;
 $pagination-active-color: map-get($theme-colors, primary);
 $pagination-active-color: map-get($theme-colors, primary);
-$pagination-active-bg: none;
+//$pagination-active-bg: none;
 
 // Nav Tabs
 $nav-tabs-border-radius: 0;
 $nav-tabs-link-hover-border-width: 4px;
 $nav-tabs-link-active-border-width: 4px;
 $nav-tabs-link-active-border-color: map-get($theme-colors, primary);
-$nav-tabs-link-active-bg: transparent;
+//$nav-tabs-link-active-bg: transparent;
 //$btn-disabled-opacity: 0.2;
 
 // Toogle Switch

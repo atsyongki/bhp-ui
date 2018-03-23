@@ -15,7 +15,6 @@ $gray-900: #353544;
 $gray-subtle: $gray-300;
 
 // Scaffolding
-
 $text-color:          $gray-300;
 $btn-secondary-color: $gray-700;
 
@@ -152,7 +151,6 @@ $sidebar-brand-hover-color: $gray-500;
 
 @import 'shared-after';
 
-
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -183,19 +181,14 @@ $body-color:          $white;
 //
 // Style anchor elements.
 
-$link-color:                $bhp_turquoise_3;
-$link-hover-color:          darken($link-color, 15%);
-
+$link-color:                $bhp_blue_4;
+$link-hover-color:          lighten($link-color, 15%);
 
 // Components
 //
 // Define common padding and border radius sizes and more.
 
 $border-color:                $gray-300;
-
-$border-radius:               .25rem;
-$border-radius-lg:            .3rem;
-$border-radius-sm:            .2rem;
 
 $component-active-color:      $white;
 $component-active-bg:         theme-color("primary");
@@ -211,7 +204,6 @@ $hr-border-color:             $gray-400;
 $kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25);
 
 $mark-bg:                     #fcf8e3;
-
 
 // Tables
 //
@@ -238,12 +230,12 @@ $table-striped-order:         odd;
 $table-caption-color:         $text-muted;
 
 //===== Override
-$table-bg:                $table-dark-bg;
+$table-bg:                    $table-dark-bg;
 $table-accent-bg:             $table-dark-accent-bg;
 $table-hover-bg:              $table-dark-hover-bg;
 $table-active-bg:             $table-hover-bg;
-$table-border-color: $table-dark-border-color;
-$table-head-color: $table-dark-color;
+$table-border-color:          $table-dark-border-color;
+$table-head-color:            $table-dark-color;
 ///=======
 
 // Buttons + Forms
@@ -263,11 +255,8 @@ $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-colo
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075);
 $btn-focus-box-shadow:        $input-btn-focus-box-shadow;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125);
-
 $btn-link-disabled-color:     $gray-600;
-
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-
 
 // Forms
 
@@ -311,7 +300,6 @@ $custom-control-indicator-active-box-shadow:    none;
 $custom-checkbox-indicator-indeterminate-bg:          $component-active-bg;
 $custom-checkbox-indicator-indeterminate-color:       $custom-control-indicator-checked-color;
 
-
 $custom-select-color:               $input-color;
 $custom-select-disabled-color:      $gray-600;
 $custom-select-bg:                  $input-bg;
@@ -343,11 +331,9 @@ $custom-file-box-shadow:            $input-box-shadow;
 $custom-file-button-color:          $custom-file-color;
 $custom-file-button-bg:             $input-group-addon-bg;
 
-
 // Form validation
 $form-feedback-valid-color:         theme-color("success");
 $form-feedback-invalid-color:       theme-color("danger");
-
 
 // Dropdowns
 //

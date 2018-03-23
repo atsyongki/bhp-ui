@@ -11,7 +11,6 @@ $gray-700: #494A58;
 $gray-800: #3F414E;
 $gray-900: #353544;
 
-
 // reset gray subtle
 $gray-subtle: $gray-300;
 
@@ -24,8 +23,6 @@ $btn-secondary-color: $gray-700;
 $code-bg:                        darken($body-bg, 5%);
 $blockquote-border-color:        $gray-800;
 $hr-border-color:                $gray-800;
-
-
 
 // Forms
 $input-bg:                       $gray-800;
@@ -153,7 +150,6 @@ $iconav-link-active-bg:     $gray-900;
 $sidebar-brand-color:       $gray-700;
 $sidebar-brand-hover-color: $gray-500;
 
-
 @import 'shared-after';
 
 
@@ -162,11 +158,9 @@ $sidebar-brand-hover-color: $gray-500;
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-
 //
 // Color system
 //
-
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8%;
@@ -177,7 +171,6 @@ $yiq-contrasted-threshold:  150;
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 $yiq-text-dark:             $gray-900;
 $yiq-text-light:            $white;
-
 
 // Body
 //
@@ -190,10 +183,8 @@ $body-color:          $white;
 //
 // Style anchor elements.
 
-$link-color:                theme-color("primary");
-$link-decoration:           none;
+$link-color:                $bhp_turquoise_3;
 $link-hover-color:          darken($link-color, 15%);
-$link-hover-decoration:     underline;
 
 
 // Components

@@ -1,6 +1,22 @@
-// This corresponds to 13px (16px browser default)
+
+html {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+}
+
 $font-family-base: 'Roboto', Arial, sans-serif;
+
 $font-size-xs: .875rem;
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1rem;
+  }
+}
 
 // Utilities Colours
 $white: #fff;
@@ -8,6 +24,7 @@ $red: #ee5f5b;
 $green: #5cb85c;
 $yellow: #f0ad4e;
 $blue: #03A9F4;
+$off_white:   #FAFBFC;
 
 // BHP Colours
 $bhp_orange_1: #dd5900;
@@ -68,10 +85,6 @@ $bhp-colors: (
   bhp-grey-2: $bhp_grey_2,
   bhp-grey-3: $bhp_grey_3,
   bhp-grey-4: $bhp_grey_4,
-  red: $red,
-  green: $red,
-  yellow: $yellow,
-  blue: $blue,
 );
 
 // Theme Colours
@@ -83,7 +96,9 @@ $theme-colors: map-merge($theme-colors, (
   "danger":     $red,
 ));
 
-$blue: map-get($bhp-colors, bhp-blue-3);
+$colors: (
+  off-white: $off_white,
+);
 
 // Pagination
 //$pagination-bg: none;
@@ -97,8 +112,8 @@ $nav-tabs-border-radius: 0;
 $nav-tabs-link-hover-border-width: 4px;
 $nav-tabs-link-active-border-width: 4px;
 $nav-tabs-link-active-border-color: map-get($theme-colors, primary);
-//$nav-tabs-link-active-bg: transparent;
-//$btn-disabled-opacity: 0.2;
+$nav-tabs-link-active-bg: transparent;
+$btn-disabled-opacity: 0.2;
 
 // Toogle Switch
 $toggle-switch-padding: 1px;

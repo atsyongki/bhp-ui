@@ -13,23 +13,32 @@ $gray-900: #353544;
 
 // reset gray subtle
 $gray-subtle: $gray-300;
+$fa-inverse_color: $body-color;
 
 // Scaffolding
-$text-color:          $gray-300;
+$body-bg:             $gray-800;
+$body-color:          $white;
+$text-color:          $white;
 $btn-secondary-color: $gray-700;
 
 // Typography
-$code-bg:                        darken($body-bg, 5%);
-$blockquote-border-color:        $gray-800;
-$hr-border-color:                $gray-800;
+$headings-color:                 $white;
+//$code-bg:                        darken($body-bg, 5%);
+//$blockquote-border-color:        $gray-800;
+$hr-border-color:                $white;
+
+// Tables
+$table-bg-accent:                $gray-800;
+$table-border-color:             $gray-800;
+$table-bg-hover:                 $gray-800;
 
 // Forms
 $input-bg:                       $gray-800;
 $input-border-color:             $gray-800;
 $input-disabled-bg:              lighten($gray-900, 5%);
-$input-color:                    #fff;
+$input-color:                    $white;
 $input-border:                   $gray-800;
-$input-border-focus:             #fff;
+$input-border-focus:             $white;
 $input-group-addon-bg:           lighten($gray-900, 18%);
 $input-group-addon-border-color: transparent;
 $input-color-placeholder:        $gray-300;
@@ -67,7 +76,7 @@ $pagination-bg:                        $gray-900;
 $pagination-border-color:              $gray-800;
 $pagination-hover-border-color:        $gray-800;
 
-$pagination-hover-color:               #fff;
+$pagination-hover-color:               $white;
 $pagination-hover-bg:                  $gray-800;
 $pagination-hover-border:              $pagination-hover-bg;
 
@@ -100,13 +109,13 @@ $list-group-disabled-text-color:       inherit;
 $list-group-border-color:              #434857;
 
 // Tooltips
-$tooltip-arrow-color: #fff;
+$tooltip-arrow-color: $white;
 
 $thumbnail-bg:           transparent;
 $thumbnail-border-color: lighten($gray-900, 5%);
 
 $badge-color: $body-bg;
-$badge-bg: #fff;
+$badge-bg: $white;
 
 $btn-toolbar-divider-bg:      $gray-800;
 
@@ -122,16 +131,16 @@ $hr-divider-before-bg:       $gray-800;
 $nav-header-color:                $gray-700;
 $nav-tabs-border-color:           $gray-900;
 $nav-bordered-color-active:       theme-color("primary");
-$nav-bordered-color:              #fff;
+$nav-bordered-color:              $white;
 
-$list-group-header-color:  #fff;
+$list-group-header-color:  $white;
 $list-group-border:        $gray-800;
 
-$tooltip-bg: #fff;
+$tooltip-bg: $white;
 $tooltip-color: $body-bg;
 
 $statlist-border-color: $gray-800;
-$statlist-link-color:   #fff;
+$statlist-link-color:   $white;
 $statlist-progress-bg:  lighten($body-bg, 5%);
 
 $sidebar-toggler-color: $gray-800;
@@ -149,472 +158,18 @@ $iconav-link-active-bg:     $gray-900;
 $sidebar-brand-color:       $gray-700;
 $sidebar-brand-hover-color: $gray-500;
 
+// Modals
+
+$modal-content-bg:                  $body-bg;
+//$modal-header-border-color:         rgba(0,0,0,.2) !default;
+
+// Cards
+
+$card-cap-bg:                       $table-hover-bg !default;
+$card-bg:                           $gray-900;
+
+
+
 @import 'shared-after';
 
-// Variables
-//
-// Variables should follow the `$component-state-property-size` formula for
-// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
-
-//
-// Color system
-//
-
-// Set a specific jump point for requesting color jumps
-$theme-color-interval:      8%;
-
-// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-$yiq-contrasted-threshold:  150;
-
-// Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark:             $gray-900;
-$yiq-text-light:            $white;
-
-// Body
-//
-// Settings for the `<body>` element.
-
-$body-bg:             $gray-900;
-$body-color:          $white;
-
-// Links
-//
-// Style anchor elements.
-
-$link-color:                $bhp_blue_4;
-$link-hover-color:          lighten($link-color, 15%);
-
-// Components
-//
-// Define common padding and border radius sizes and more.
-
-$border-color:                $gray-300;
-
-$component-active-color:      $white;
-$component-active-bg:         theme-color("primary");
-
-$headings-color:              $gray-100;
-
-$text-muted:                  $white;
-
-$blockquote-small-color:      $gray-600;
-
-$hr-border-color:             $gray-400;
-
-$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25);
-
-$mark-bg:                     #fcf8e3;
-
-// Tables
-//
-// Customizes the `.table` component with basic values, each used across all table variations.
-
-$table-bg:                    transparent;
-$table-accent-bg:             rgba($black, .05);
-$table-hover-bg:              rgba($black, .075);
-$table-active-bg:             $table-hover-bg;
-
-$table-border-color:          $gray-300;
-
-$table-head-bg:               $gray-200;
-$table-head-color:            $gray-700;
-
-$table-dark-bg:               $gray-300;
-$table-dark-accent-bg:        rgba($white, .05);
-$table-dark-hover-bg:         rgba($white, .075);
-$table-dark-border-color:     lighten($gray-900, 7.5%);
-$table-dark-color:            $body-bg;
-
-$table-striped-order:         odd;
-
-$table-caption-color:         $text-muted;
-
-//===== Override
-$table-bg:                    $table-dark-bg;
-$table-accent-bg:             $table-dark-accent-bg;
-$table-hover-bg:              $table-dark-hover-bg;
-$table-active-bg:             $table-hover-bg;
-$table-border-color:          $table-dark-border-color;
-$table-head-color:            $table-dark-color;
-///=======
-
-// Buttons + Forms
-//
-// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
-
-$input-btn-line-height:       $line-height-base;
-
-$input-btn-focus-color:       rgba($component-active-bg, .25);
-$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
-
-
-// Buttons
-//
-// For each of Bootstrap's buttons, define text, background, and border color.
-
-$btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075);
-$btn-focus-box-shadow:        $input-btn-focus-box-shadow;
-$btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125);
-$btn-link-disabled-color:     $gray-600;
-$btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-
-// Forms
-
-$input-bg:                              $white;
-$input-disabled-bg:                     $gray-200;
-
-$input-color:                           $gray-700;
-$input-border-color:                    $gray-400;
-$input-box-shadow:                      inset 0 1px 1px rgba($black, .075);
-
-$input-focus-border-color:              lighten($component-active-bg, 25%);
-$input-focus-color:                     $input-color;
-$input-focus-box-shadow:                $input-btn-focus-box-shadow;
-
-$input-placeholder-color:               $gray-600;
-$input-plaintext-color:                 $body-color;
-
-$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-
-$input-group-addon-color:               $input-color;
-$input-group-addon-bg:                  $gray-200;
-$input-group-addon-border-color:        $input-border-color;
-
-$custom-control-indicator-bg:           $gray-300;
-$custom-control-indicator-box-shadow:   inset 0 .25rem .25rem rgba($black, .1);
-
-$custom-control-indicator-disabled-bg:          $gray-200;
-$custom-control-label-disabled-color:           $gray-600;
-
-$custom-control-indicator-checked-color:        $component-active-color;
-$custom-control-indicator-checked-bg:           $component-active-bg;
-$custom-control-indicator-checked-disabled-bg:  rgba(theme-color("primary"), .5);
-$custom-control-indicator-checked-box-shadow:   none;
-
-$custom-control-indicator-focus-box-shadow:     0 0 0 1px $body-bg, $input-btn-focus-box-shadow;
-
-$custom-control-indicator-active-color:         $component-active-color;
-$custom-control-indicator-active-bg:            lighten($component-active-bg, 35%);
-$custom-control-indicator-active-box-shadow:    none;
-
-$custom-checkbox-indicator-indeterminate-bg:          $component-active-bg;
-$custom-checkbox-indicator-indeterminate-color:       $custom-control-indicator-checked-color;
-
-$custom-select-color:               $input-color;
-$custom-select-disabled-color:      $gray-600;
-$custom-select-bg:                  $input-bg;
-$custom-select-disabled-bg:         $gray-200;
-$custom-select-indicator-color:     $gray-800;
-$custom-select-border-width:        $input-btn-border-width;
-$custom-select-border-color:        $input-border-color;
-$custom-select-border-radius:       $border-radius;
-
-$custom-select-focus-border-color:  $input-focus-border-color;
-$custom-select-focus-box-shadow:    inset 0 1px 2px rgba($black, .075), 0 0 5px rgba($custom-select-focus-border-color, .5);
-
-
-$custom-range-track-bg:             $gray-300;
-$custom-range-track-box-shadow:     inset 0 .25rem .25rem rgba($black, .1);
-
-$custom-range-thumb-bg:               $component-active-bg;
-$custom-range-thumb-box-shadow:       0 .1rem .25rem rgba($black, .1);
-$custom-range-thumb-focus-box-shadow: 0 0 0 1px $body-bg, $input-btn-focus-box-shadow;
-$custom-range-thumb-active-bg:        lighten($component-active-bg, 35%);
-
-$custom-file-focus-border-color:    $input-focus-border-color;
-$custom-file-focus-box-shadow:      $input-btn-focus-box-shadow;
-
-$custom-file-color:                 $input-color;
-$custom-file-bg:                    $input-bg;
-$custom-file-border-color:          $input-border-color;
-$custom-file-box-shadow:            $input-box-shadow;
-$custom-file-button-color:          $custom-file-color;
-$custom-file-button-bg:             $input-group-addon-bg;
-
-// Form validation
-$form-feedback-valid-color:         theme-color("success");
-$form-feedback-invalid-color:       theme-color("danger");
-
-// Dropdowns
-//
-// Dropdown menu container and contents.
-
-$dropdown-bg:                       $white;
-$dropdown-border-color:             rgba($black, .15);
-$dropdown-divider-bg:               $gray-200;
-$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175);
-
-$dropdown-link-color:               $gray-900;
-$dropdown-link-hover-color:         darken($gray-900, 5%);
-$dropdown-link-hover-bg:            $gray-100;
-
-$dropdown-link-active-color:        $component-active-color;
-$dropdown-link-active-bg:           $component-active-bg;
-
-$dropdown-link-disabled-color:      $gray-600;
-
-$dropdown-header-color:             $gray-600;
-
-
-
-// Navs
-
-$nav-link-padding-y:                .5rem;
-$nav-link-padding-x:                1rem;
-$nav-link-disabled-color:           $gray-600;
-
-$nav-tabs-border-color:             $gray-300;
-$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color;
-$nav-tabs-link-active-color:        $gray-700;
-$nav-tabs-link-active-bg:           $body-bg;
-$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg;
-
-$nav-pills-link-active-color:       $component-active-color;
-$nav-pills-link-active-bg:          $component-active-bg;
-
-$nav-divider-color:                 $gray-200;
-
-
-$navbar-dark-color:                 rgba($white, .5);
-$navbar-dark-hover-color:           rgba($white, .75);
-$navbar-dark-active-color:          $white;
-$navbar-dark-disabled-color:        rgba($white, .25);
-$navbar-dark-toggler-border-color:  rgba($white, .1);
-
-$navbar-light-color:                rgba($black, .5);
-$navbar-light-hover-color:          rgba($black, .7);
-$navbar-light-active-color:         rgba($black, .9);
-$navbar-light-disabled-color:       rgba($black, .3);
-$navbar-light-toggler-border-color: rgba($black, .1);
-
-// Pagination
-
-$pagination-color:                  $link-color;
-$pagination-bg:                     $white;
-$pagination-border-color:           $gray-300;
-
-$pagination-focus-box-shadow:       $input-btn-focus-box-shadow;
-
-$pagination-hover-color:            $link-hover-color;
-$pagination-hover-bg:               $gray-200;
-$pagination-hover-border-color:     $gray-300;
-
-$pagination-active-color:           $component-active-color;
-$pagination-active-bg:              $component-active-bg;
-$pagination-active-border-color:    $pagination-active-bg;
-
-$pagination-disabled-color:         $gray-600;
-$pagination-disabled-bg:            $white;
-$pagination-disabled-border-color:  $gray-300;
-
-
-// Jumbotron
-
-$jumbotron-bg:                      $gray-200;
-
-
-// Cards
-
-$card-border-color:                 rgba($black, .125);
-$card-cap-bg:                       $bhp_dt_gray_5;
-$card-bg:                           $bhp_dt_gray_4;
-
-
-// Tooltips
-
-$tooltip-color:                     $white;
-$tooltip-bg:                        $black;
-$tooltip-arrow-color:               $tooltip-bg;
-
-
-// Popovers
-
-$popover-bg:                        $white;
-$popover-border-color:              rgba($black, .2);
-$popover-box-shadow:                0 .25rem .5rem rgba($black, .2);
-
-$popover-header-bg:                 darken($popover-bg, 3%);
-$popover-header-color:              $headings-color;
-
-$popover-body-color:                $body-color;
-
-$popover-arrow-color:               $popover-bg;
-
-$popover-arrow-outer-color:         fade-in($popover-border-color, .05);
-
-// Modals
-
-// Padding applied to the modal body
-
-$modal-content-bg:                  $white;
-$modal-content-border-color:        rgba($black, .2);
-$modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5);
-$modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5);
-
-$modal-backdrop-bg:                 $black;
-$modal-header-border-color:         $gray-200;
-$modal-footer-border-color:         $modal-header-border-color;
-
-
-// Progress bars
-
-$progress-bg:                       $gray-200;
-$progress-border-radius:            $border-radius;
-$progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1);
-$progress-bar-color:                $white;
-$progress-bar-bg:                   theme-color("primary");
-
-// List group
-
-$list-group-bg:                     $white;
-$list-group-border-color:           rgba($black, .125);
-
-$list-group-hover-bg:               $gray-100;
-$list-group-active-color:           $component-active-color;
-$list-group-active-bg:              $component-active-bg;
-$list-group-active-border-color:    $list-group-active-bg;
-
-$list-group-disabled-color:         $gray-600;
-$list-group-disabled-bg:            $list-group-bg;
-
-$list-group-action-color:           $gray-700;
-$list-group-action-hover-color:     $list-group-action-color;
-
-$list-group-action-active-color:    $body-color;
-$list-group-action-active-bg:       $gray-200;
-
-
-// Image thumbnails
-
-$thumbnail-bg:                      $body-bg;
-$thumbnail-box-shadow:              0 1px 2px rgba($black, .075);
-
-
-// Figures
-
-$figure-caption-color:              $gray-600;
-
-
-// Breadcrumbs
-
-$breadcrumb-bg:                     $gray-200;
-$breadcrumb-divider-color:          $gray-600;
-$breadcrumb-active-color:           $gray-600;
-$breadcrumb-divider:                "/";
-
-$breadcrumb-border-radius:          $border-radius;
-
-
-// Carousel
-
-$carousel-control-color:            $white;
-$carousel-indicator-active-bg:      $white;
-
-$carousel-caption-color:            $white;
-
-// Close
-
-$close-color:                       $black;
-$close-text-shadow:                 0 1px 0 $white;
-
-// Code
-
-$code-color:                        $pink;
-
-$kbd-color:                         $white;
-$kbd-bg:                            $gray-900;
-
-$pre-color:                         $gray-900;
-
-//Bootstswatch
-
-$table-accent-bg:             rgba($white,.05);
-$table-hover-bg:              rgba($white,.075);
-
-$table-dark-bg:               $light;
-$table-dark-border-color:     $gray-600;
-$table-dark-color:            $body-bg;
-
-// Forms
-
-$input-group-addon-color:           $gray-400;
-
-// Dropdowns
-
-$dropdown-bg:                       $gray-600;
-$dropdown-divider-bg:               rgba($black,.15);
-
-$dropdown-link-color:               $body-color;
-$dropdown-link-hover-color:         $dropdown-link-color;
-$dropdown-link-hover-bg:            $table-hover-bg;
-
-// Navs
-
-$nav-link-disabled-color:           rgba(255,255,255,.4);
-
-$nav-tabs-border-color:             $gray-600;
-$nav-tabs-link-active-color:        $body-color;
-$nav-tabs-link-active-border-color: $gray-600;
-
-// Navbar
-
-$navbar-dark-color:                 rgba($white,.75);
-$navbar-dark-hover-color:           $white;
-
-// Pagination
-
-$pagination-color:                  $white;
-$pagination-bg:                     $gray-600;
-$pagination-border-color:           transparent;
-
-$pagination-hover-color:            $white;
-$pagination-hover-bg:               $nav-link-disabled-color;
-$pagination-hover-border-color:     $pagination-border-color;
-
-$pagination-disabled-color:         $nav-link-disabled-color;
-$pagination-disabled-bg:            $pagination-bg;
-$pagination-disabled-border-color:  $pagination-border-color;
-
-// Modals
-
-$modal-content-bg:                  $gray-600;
-
-$modal-header-border-color:         rgba(0,0,0,.2);
-
-// Cards
-
-$card-cap-bg:                       $table-hover-bg;
-$card-bg:                           $gray-600;
-$card-border-color:                 $gray-600;
-
-// Popovers
-
-$popover-bg:                        $gray-600;
-
-$popover-header-bg:                 $table-hover-bg;
-
-// Progress bars
-
-$progress-bar-color:                $primary;
-
-// List group
-
-$list-group-bg:                     $gray-600;
-$list-group-border-color:           transparent;
-
-$list-group-hover-bg:               $nav-link-disabled-color;
-
-$list-group-disabled-color:         $nav-link-disabled-color;
-
-$list-group-action-color:           $white;
-$list-group-action-hover-color:     $white;
-
-// Breadcrumbs
-
-$breadcrumb-divider-color:          $body-color;
-$breadcrumb-active-color:           $body-color;
-
-// Code
-
-$pre-color:                         inherit;
 

@@ -112,17 +112,18 @@ $card-cap-bg: rgba($white, .1);
 $card-bg: $gray-700;
 
 // Tooltips
-$tooltip-color: $black;
-$tooltip-bg: $white;
+$tooltip-bg: $body-bg;
+$tooltip-color: $gray-600;
 
 // Popovers
-//$popover-bg: $black;
-//$popover-border-color: rgba($white, .2);
-//$popover-header-bg: lighten($popover-bg, 3%);
-//$popover-header-color: $headings-color !default;
-//$popover-body-color: $body-color !default;
-//$popover-arrow-color: $popover-bg !default;
-//$popover-arrow-outer-color: fade-in($popover-border-color, .05) !default;
+$popover-bg: $gray-600;
+$popover-border-color: rgba($white, .2);
+$popover-header-bg: lighten($popover-bg, 3%);
+
+$popover-header-color: $headings-color;
+$popover-body-color: $body-color;
+$popover-arrow-color: $popover-bg;
+$popover-arrow-outer-color: fade-in($popover-border-color, .05);
 
 // Badges
 $badge-color: $body-bg;

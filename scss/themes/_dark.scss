@@ -12,168 +12,168 @@ $gray-800: #3F414E;
 $gray-900: #353544;
 
 // Body
-$body-bg:             $gray-900;
-$body-color:          $white;
+$body-bg: $gray-900;
+$body-color: $white;
 
 // Links
-$link-color:                $bhp_blue_4;
-$link-hover-color:          lighten($link-color, 15%);
+$link-color: $bhp_blue_4;
+$link-hover-color: lighten($link-color, 15%);
 
 // Components
-$border-color:                $gray-300 !default;
-$component-active-color:      $white !default;
+$border-color: $gray-300 !default;
+$component-active-color: $body-color !default;
 
 // Fonts
-$headings-color:                 $white;
-$hr-border-color:             rgba($white, .1);
+$headings-color: $body-color;
+$hr-border-color: rgba($white, .1);
 
 // Scaffolding
 $gray-subtle: $gray-300;
 $fa-inverse_color: $body-color;
-$text-color:          $white;
+$text-color: $body-color;
 $btn-secondary-color: $gray-700;
 
 // Tables
-$table-bg-accent:                $gray-800;
-$table-border-color:             $gray-800;
-$table-bg-hover:                 $gray-800;
+$table-bg-accent: $gray-800;
+$table-border-color: $gray-800;
+$table-bg-hover: $gray-800;
 
 // Forms
-$input-bg:                       $gray-800;
-$input-border-color:             $gray-800;
-$input-disabled-bg:              lighten($gray-900, 5%);
-$input-color:                    $white;
-$input-border:                   $gray-800;
-$input-border-focus:             $white;
-$input-group-addon-bg:           lighten($gray-900, 18%);
+$input-bg: $gray-800;
+$input-border-color: $gray-800;
+$input-disabled-bg: lighten($gray-900, 5%);
+$input-color: $body-color;
+$input-border: $gray-800;
+$input-border-focus: $white;
+$input-group-addon-bg: lighten($gray-900, 18%);
 $input-group-addon-border-color: transparent;
-$input-color-placeholder:        $gray-300;
-$custom-select-color:         $text-color;
-$custom-select-bg:            $gray-800;
-$custom-select-disabled-bg:   darken($gray-800, 10%);
+$input-color-placeholder: $gray-300;
+$custom-select-color: $text-color;
+$custom-select-bg: $gray-800;
+$custom-select-disabled-bg: darken($gray-800, 10%);
 
 $custom-control-indicator-bg: $gray-800;
 
 // Form validation
-$form-feedback-valid-color:         theme-color("success") !default;
-$form-feedback-invalid-color:       theme-color("danger") !default;
+$form-feedback-valid-color: theme-color("success") !default;
+$form-feedback-invalid-color: theme-color("danger") !default;
 
 // Dropdowns
-$dropdown-bg:                       $white !default;
-$dropdown-border-color:             rgba($black, .15) !default;
-$dropdown-divider-bg:               $gray-200 !default;
-$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
-$dropdown-link-color:               $gray-900 !default;
-$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg:            $gray-100 !default;
-$dropdown-link-active-color:        $component-active-color !default;
-$dropdown-link-active-bg:           $component-active-bg !default;
-$dropdown-link-disabled-color:      $gray-600 !default;
-$dropdown-header-color:             $gray-600 !default;
+$dropdown-bg: $white !default;
+$dropdown-border-color: rgba($black, .15) !default;
+$dropdown-divider-bg: $gray-200 !default;
+$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
+$dropdown-link-color: $gray-900 !default;
+$dropdown-link-hover-color: darken($gray-900, 5%) !default;
+$dropdown-link-hover-bg: $gray-100 !default;
+$dropdown-link-active-color: $component-active-color !default;
+$dropdown-link-active-bg: $component-active-bg !default;
+$dropdown-link-disabled-color: $gray-600 !default;
+$dropdown-header-color: $gray-600 !default;
 
 // Navs
-$nav-link-hover-bg:                         $gray-800;
-$nav-pills-active-link-color:               $gray-900;
-$nav-pills-active-link-bg:                  theme-color("primary");
-$nav-tabs-border-color:                     $gray-800;
-$nav-tabs-active-link-hover-color:          $component-active-color;
-$nav-tabs-active-link-hover-bg:             transparent;
-$nav-tabs-active-link-hover-border-color:   $nav-tabs-border-color;
+$nav-link-hover-bg: $gray-800;
+$nav-pills-active-link-color: $gray-900;
+$nav-pills-active-link-bg: theme-color("primary");
+$nav-tabs-border-color: $gray-800;
+$nav-tabs-active-link-hover-color: $component-active-color;
+$nav-tabs-active-link-hover-bg: transparent;
+$nav-tabs-active-link-hover-border-color: $nav-tabs-border-color;
 
 // Inverted navbar
-$navbar-inverse-color:                      $gray-300;
-$navbar-inverse-bg:                         darken($gray-900, 5%);
-$navbar-inverse-border:                     darken($gray-900, 5%);
+$navbar-inverse-color: $gray-300;
+$navbar-inverse-bg: darken($gray-900, 5%);
+$navbar-inverse-border: darken($gray-900, 5%);
 
 // Pagination
-$pagination-color:                     $gray-700;
-$pagination-bg:                        $gray-900;
-$pagination-border-color:              $gray-800;
-$pagination-hover-border-color:        $gray-800;
+$pagination-color: $gray-700;
+$pagination-bg: $gray-900;
+$pagination-border-color: $gray-800;
+$pagination-hover-border-color: $gray-800;
 
-$pagination-hover-color:               $white;
-$pagination-hover-bg:                  $gray-800;
-$pagination-hover-border:              $pagination-hover-bg;
+$pagination-hover-color: $body-color;
+$pagination-hover-bg: $gray-800;
+$pagination-hover-border: $pagination-hover-bg;
 
-$pagination-active-color:              $component-active-color;
-$pagination-active-bg:                 $gray-700;
-$pagination-active-border:             $gray-700;
+$pagination-active-color: $component-active-color;
+$pagination-active-bg: $gray-700;
+$pagination-active-border: $gray-700;
 
-$pagination-disabled-color:            $gray-700;
-$pagination-disabled-bg:               transparent;
-$pagination-disabled-border:           $gray-800;
+$pagination-disabled-color: $gray-700;
+$pagination-disabled-bg: transparent;
+$pagination-disabled-border: $gray-800;
 
 // Jumbotron
-$jumbotron-bg:                      darken($gray-900, 5%);
+$jumbotron-bg: darken($gray-900, 5%);
 
 // Cards
-$card-border-color:                 rgba($black, .125);
-$card-cap-bg:                       rgba($black, .03);
-$card-bg:                           $gray-600;
+$card-border-color: rgba($black, .125);
+$card-cap-bg: rgba($black, .03);
+$card-bg: $gray-600;
 
 // Tooltips
 $tooltip-color: $black;
 $tooltip-bg: $white;
 
 // Popovers
-$popover-bg:                        $black ;
-$popover-border-color:              rgba($white, .2);
-$popover-header-bg:                 lighten($popover-bg, 3%);
-$popover-header-color:              $headings-color !default;
-$popover-body-color:                $body-color !default;
-$popover-arrow-color:               $popover-bg !default;
-$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
+$popover-bg: $black;
+$popover-border-color: rgba($white, .2);
+$popover-header-bg: lighten($popover-bg, 3%);
+$popover-header-color: $headings-color !default;
+$popover-body-color: $body-color !default;
+$popover-arrow-color: $popover-bg !default;
+$popover-arrow-outer-color: fade-in($popover-border-color, .05) !default;
 
 // Badges
 $badge-color: $body-bg;
 $badge-bg: $white;
 
 // Modals
-$modal-content-bg:                  $body-bg;
-$modal-content-border-color:        rgba($black, .2);
-$modal-backdrop-bg:                 $black;
-$modal-header-border-color:         rgba($black, .2);
-$modal-footer-border-color:         $modal-header-border-color;
+$modal-content-bg: $body-bg;
+$modal-content-border-color: rgba($black, .2);
+$modal-backdrop-bg: $black;
+$modal-header-border-color: rgba($black, .2);
+$modal-footer-border-color: $modal-header-border-color;
 
 // Progress bars
-$progress-bg:                       $gray-800;
+$progress-bg: $gray-800;
 
 // List groups
-//$list-group-bg:                        transparent;
-$list-group-border:                    $gray-800;
-$list-group-hover-bg:                  $gray-800;
-$list-group-action-color:              $gray-300;
-$list-group-action-hover-color:        $gray-300;
-$list-group-action-heading-color:      $gray-300;
-$list-group-active-color:              $component-active-color;
-$list-group-active-bg:                 $gray-700;
-$list-group-active-border:             $gray-700;
-$list-group-active-text-color:         lighten($list-group-active-bg, 40%);
-$list-group-disabled-color:            $gray-700;
-$list-group-disabled-bg:               transparent;
-$list-group-disabled-text-color:       inherit;
-//$list-group-border-color:              #434857;
+//$list-group-bg: transparent;
+$list-group-border: $gray-800;
+$list-group-hover-bg: $gray-800;
+$list-group-action-color: $gray-300;
+$list-group-action-hover-color: $gray-300;
+$list-group-action-heading-color: $gray-300;
+$list-group-active-color: $component-active-color;
+$list-group-active-bg: $gray-700;
+$list-group-active-border: $gray-700;
+$list-group-active-text-color: lighten($list-group-active-bg, 40%);
+$list-group-disabled-color: $gray-700;
+$list-group-disabled-bg: transparent;
+$list-group-disabled-text-color: inherit;
+//$list-group-border-color: #434857;
 
-$list-group-header-color:  $white;
-$list-group-border:        $gray-800;
+$list-group-header-color: $white;
+$list-group-border: $gray-800;
 
-$list-group-bg:                     $gray-700 !default;
-$list-group-border-color:           transparent !default;
+$list-group-bg: $gray-700 !default;
+$list-group-border-color: transparent !default;
 
 // Image Thumbnails
-//$thumbnail-bg:                   transparent;
-$thumbnail-border:               lighten($gray-900, 5%);
+//$thumbnail-bg: transparent;
+$thumbnail-border: lighten($gray-900, 5%);
 
 // Breadcrumbs
-$breadcrumb-bg:                     $gray-200 !default;
-$breadcrumb-divider-color:          $gray-600 !default;
-$breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-bg:                        lighten($gray-900, 5%);
-$breadcrumb-active-color:              $component-active-color;
+$breadcrumb-bg: $gray-200 !default;
+$breadcrumb-divider-color: $gray-600 !default;
+$breadcrumb-active-color: $gray-600 !default;
+$breadcrumb-bg: lighten($gray-900, 5%);
+$breadcrumb-active-color: $component-active-color;
 
 // Close
-$close-color:                       $white;
-$close-text-shadow:                 0 1px 0 $black;
+$close-color: $body-color;
+$close-text-shadow: 0 1px 0 $black;
 
 $fa-inverse_color: $dark;
 

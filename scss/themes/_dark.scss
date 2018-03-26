@@ -23,7 +23,7 @@ $link-hover-color: lighten($link-color, 15%);
 
 // Components
 $border-color: rgba($white, .1);
-//$component-active-color: $body-color !default;
+$component-active-color: $body-color;
 
 // Fonts
 $headings-color: $body-color;
@@ -55,10 +55,6 @@ $custom-select-bg: $gray-800;
 $custom-select-disabled-bg: darken($gray-800, 10%);
 $custom-control-indicator-bg: $gray-800;
 
-// Form validation
-//$form-feedback-valid-color: theme-color("success") !default;
-//$form-feedback-invalid-color: theme-color("danger") !default;
-
 // Dropdowns
 //$dropdown-bg: $white !default;
 //$dropdown-border-color: rgba($black, .15) !default;
@@ -73,13 +69,9 @@ $custom-control-indicator-bg: $gray-800;
 //$dropdown-header-color: $gray-600 !default;
 
 // Navs
-$nav-link-hover-bg: $gray-800;
-$nav-pills-active-link-color: $gray-900;
-$nav-pills-active-link-bg: theme-color("primary");
-$nav-tabs-border-color: $gray-800;
-$nav-tabs-active-link-hover-color: $component-active-color;
-$nav-tabs-active-link-hover-bg: transparent;
-$nav-tabs-active-link-hover-border-color: $nav-tabs-border-color;
+$nav-tabs-border-color: $gray-500;
+$nav-tabs-link-hover-border-color: $nav-tabs-border-color;
+//$nav-tabs-active-link-hover-border-color: $gray-400;
 
 // Inverted navbar
 //$navbar-inverse-color: $gray-300;
@@ -108,9 +100,9 @@ $pagination-disabled-border: $gray-800;
 $jumbotron-bg: darken($gray-900, 5%);
 
 // Cards
-$card-border-color: rgba($black, .125);
-$card-cap-bg: rgba($black, .03);
-$card-bg: $gray-600;
+$card-border-color: rgba($white, .125);
+$card-cap-bg: rgba($white, .1);
+$card-bg: $gray-700;
 
 // Tooltips
 $tooltip-color: $black;

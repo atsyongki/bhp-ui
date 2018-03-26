@@ -24,6 +24,7 @@ $green: #5cb85c;
 $yellow: #f0ad4e;
 $blue: #03A9F4;
 $off_white: #FAFBFC;
+$selected: #F9F9D9;
 
 // BHP Colours Variables
 $bhp_orange_1: #dd5900;
@@ -97,6 +98,7 @@ $theme-colors: map-merge($theme-colors, (
 ));
 $colors: (
         off-white: $off_white,
+        selected: $selected,
 );
 
 // Buttons
@@ -123,11 +125,12 @@ $toggle-switch-border-width: 1px;
 $toggle-switch-outer-height: 28px;
 $toggle-switch-font-size: 0.75rem;
 
-// Progress Bar
-//$progress-height: 1.25rem;
-//$progress-font-size: $font-size-base;
-
 // Spinner
 $spinner-size: 4rem;
 $spinner-size-sm: 2rem;
 $spinner-size-lg: 6rem;
+
+// List Group
+$list-group-active-color: $black;
+$list-group-active-bg: map-get($colors, selected);
+$list-group-active-border-color: $list-group-border-color;

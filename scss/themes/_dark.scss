@@ -36,9 +36,9 @@ $text-color: $body-color;
 //$btn-secondary-color: $gray-700;
 
 // Tables
-$table-bg-accent: $gray-800;
-$table-border-color: $gray-800;
-$table-bg-hover: $gray-800;
+//$table-bg-accent: $gray-800;
+//$table-border-color: $gray-800;
+//$table-bg-hover: $gray-800;
 
 // Forms
 $input-bg: $gray-800;
@@ -71,12 +71,6 @@ $custom-control-indicator-bg: $gray-800;
 // Navs
 $nav-tabs-border-color: $gray-500;
 $nav-tabs-link-hover-border-color: $nav-tabs-border-color;
-//$nav-tabs-active-link-hover-border-color: $gray-400;
-
-// Inverted navbar
-//$navbar-inverse-color: $gray-300;
-//$navbar-inverse-bg: darken($gray-900, 5%);
-//$navbar-inverse-border: darken($gray-900, 5%);
 
 // Pagination
 $pagination-color: $gray-700;
@@ -129,29 +123,15 @@ $modal-header-border-color: rgba($black, .2);
 $modal-footer-border-color: $modal-header-border-color;
 
 // Progress bars
-$progress-bg: $gray-800;
+$progress-bg: $gray-700;
 
 // List groups
-//$list-group-bg: transparent;
-$list-group-border: $gray-800;
+$list-group-bg: $gray-700;
+$list-group-border-color: rgba($white, .125);;
 $list-group-hover-bg: $gray-800;
-$list-group-action-color: $gray-300;
-$list-group-action-hover-color: $gray-300;
-$list-group-action-heading-color: $gray-300;
-$list-group-active-color: $component-active-color;
-$list-group-active-bg: $gray-700;
-$list-group-active-border: $gray-700;
 $list-group-active-text-color: lighten($list-group-active-bg, 40%);
-$list-group-disabled-color: $gray-700;
-$list-group-disabled-bg: transparent;
-$list-group-disabled-text-color: inherit;
-//$list-group-border-color: #434857;
-
-$list-group-header-color: $white;
-$list-group-border: $gray-800;
-
-$list-group-bg: $gray-700 !default;
-$list-group-border-color: transparent !default;
+$list-group-disabled-color: $gray-300;
+$list-group-disabled-bg: $list-group-bg;
 
 // Image Thumbnails
 //$thumbnail-bg: transparent;

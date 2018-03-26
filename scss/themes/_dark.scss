@@ -13,6 +13,14 @@ $gray-700: #494A58;
 $gray-800: #3F414E;
 $gray-900: #353544;
 
+// Utils Colours
+$secondary: $gray-400;
+
+// Utils Theme Colours
+$theme-colors: map-merge($theme-colors, (
+        "secondary": $secondary,
+));
+
 // Body
 $body-bg: $gray-900;
 $body-color: $white;
@@ -36,24 +44,29 @@ $text-color: $body-color;
 //$btn-secondary-color: $gray-700;
 
 // Tables
-//$table-bg-accent: $gray-800;
-//$table-border-color: $gray-800;
-//$table-bg-hover: $gray-800;
+$table-bg:                    $gray-600;
+$table-accent-bg:             $gray-700;
+$table-hover-bg:              $gray-900;
+
+$table-border-color:          $body-bg;
+$table-head-color:            $body-color;
+
+$table-head-bg:               $gray-500;
 
 // Forms
-$input-bg: $gray-800;
-$input-border-color: $gray-800;
-$input-disabled-bg: lighten($gray-900, 5%);
-$input-color: $body-color;
-$input-border: $gray-800;
-$input-border-focus: $white;
-$input-group-addon-bg: lighten($gray-900, 18%);
-$input-group-addon-border-color: transparent;
-$input-color-placeholder: $gray-300;
-$custom-select-color: $text-color;
-$custom-select-bg: $gray-800;
-$custom-select-disabled-bg: darken($gray-800, 10%);
-$custom-control-indicator-bg: $gray-800;
+//$input-bg: $gray-800;
+//$input-border-color: $gray-800;
+//$input-disabled-bg: lighten($gray-900, 5%);
+//$input-color: $body-color;
+//$input-border: $gray-800;
+//$input-border-focus: $white;
+//$input-group-addon-bg: lighten($gray-900, 18%);
+//$input-group-addon-border-color: transparent;
+//$input-color-placeholder: $gray-300;
+//$custom-select-color: $text-color;
+//$custom-select-bg: $gray-800;
+//$custom-select-disabled-bg: darken($gray-800, 10%);
+//$custom-control-indicator-bg: $gray-800;
 
 // Dropdowns
 //$dropdown-bg: $white !default;

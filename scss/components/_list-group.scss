@@ -1,0 +1,10 @@
+.list-group {
+  a.list-group-item,
+  &.list-group-item-action {
+    &.active {
+      &:hover {
+        background: $list-group-active-bg-hover;
+      }
+    }
+  }
+}

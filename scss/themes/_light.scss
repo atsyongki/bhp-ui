@@ -2,10 +2,23 @@
 
 @import 'shared-before';
 
+// Body
 $body-bg: map-get($colors, off-white);
 
+// Links
 $link-color: $bhp_blue_3;
 
+// Scaffolding
 $fa-inverse_color: $white;
+
+// Tables
+$table-bg:                    $white;
+$table-accent-bg:             $gray-100;
+$table-hover-bg:              rgba($black, .075);
+
+$table-border-color:          $gray-300;
+
+$table-head-bg:               $gray-200;
+$table-head-color:            $body-color;
 
 @import 'shared-after';

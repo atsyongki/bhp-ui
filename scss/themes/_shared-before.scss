@@ -17,15 +17,6 @@ $font-size-xs: .875rem;
   }
 }
 
-// Utils Colours Variables
-$white: #fff;
-$red: #ee5f5b;
-$green: #5cb85c;
-$yellow: #f0ad4e;
-$blue: #03A9F4;
-$off_white: #FAFBFC;
-$selected: #F9F9D9;
-
 // BHP Colours Variables
 $bhp_orange_1: #dd5900;
 $bhp_orange_2: #f77f00;
@@ -88,6 +79,16 @@ $bhp-colors: (
         bhp-grey-4: $bhp_grey_4,
 );
 
+// Utils Colours Variables
+$black: $gray-900;
+$red: #ee5f5b;
+$green: #5cb85c;
+$yellow: #f0ad4e;
+$blue: #03A9F4;
+$off_white: #FAFBFC;
+$selected: #F9F9D9;
+$selected-hover: #F1F1BF;
+
 // Utils Theme Colours
 $theme-colors: map-merge($theme-colors, (
         "primary": $bhp-orange-1,
@@ -99,6 +100,7 @@ $theme-colors: map-merge($theme-colors, (
 $colors: (
         off-white: $off_white,
         selected: $selected,
+        selected-hover: $selected-hover,
 );
 
 // Buttons
@@ -133,4 +135,5 @@ $spinner-size-lg: 6rem;
 // List Group
 $list-group-active-color: $black;
 $list-group-active-bg: map-get($colors, selected);
+$list-group-active-bg-hover: map-get($colors, selected-hover);
 $list-group-active-border-color: $list-group-border-color;

@@ -1,4 +1,4 @@
-
+// Shared Variables
 html {
   body {
     -webkit-font-smoothing: antialiased;
@@ -9,7 +9,6 @@ html {
 }
 
 $font-family-base: 'Roboto', Arial, sans-serif;
-
 $font-size-xs: .875rem;
 
 @include media-breakpoint-up(sm) {
@@ -18,15 +17,15 @@ $font-size-xs: .875rem;
   }
 }
 
-// Color system
+// Utils Colours Variables
 $white: #fff;
 $red: #ee5f5b;
 $green: #5cb85c;
 $yellow: #f0ad4e;
 $blue: #03A9F4;
-$off_white:   #FAFBFC;
+$off_white: #FAFBFC;
 
-// BHP Colours
+// BHP Colours Variables
 $bhp_orange_1: #dd5900;
 $bhp_orange_2: #f77f00;
 $bhp_orange_3: #fcba5e;
@@ -56,47 +55,48 @@ $bhp_grey_2: #666666;
 $bhp_grey_3: #b7b9bb;
 $bhp_grey_4: #e7e2d5;
 
+// BHP Theme Colours
 $bhp-colors: (
-  bhp-orange-1: $bhp_orange_1,
-  bhp-orange-2: $bhp_orange_2,
-  bhp-orange-3: $bhp_orange_3,
-  bhp-orange-4: $bhp_orange_4,
-  bhp-purple-1: $bhp_purple_1,
-  bhp-purple-2: $bhp_purple_2,
-  bhp-purple-3: $bhp_purple_3,
-  bhp-purple-4: $bhp_purple_4,
-  bhp-blue-1: $bhp_blue_1,
-  bhp-blue-2: $bhp_blue_2,
-  bhp-blue-3: $bhp_blue_3,
-  bhp-blue-4: $bhp_blue_4,
-  bhp-turquoise-1: $bhp_turquoise_1,
-  bhp-turquoise-2: $bhp_turquoise_2,
-  bhp-turquoise-3: $bhp_turquoise_3,
-  bhp-turquoise-4: $bhp_turquoise_4,
-  bhp-green-1: $bhp_green_1,
-  bhp-green-2: $bhp_green_2,
-  bhp-green-3: $bhp_green_3,
-  bhp-green-4: $bhp_green_4,
-  bhp-blue-grey-1: $bhp_blue_grey_1,
-  bhp-blue-grey-2: $bhp_blue_grey_2,
-  bhp-blue-grey-3: $bhp_blue_grey_3,
-  bhp-blue-grey-4: $bhp_blue_grey_4,
-  bhp-grey-1: $bhp_grey_1,
-  bhp-grey-2: $bhp_grey_2,
-  bhp-grey-3: $bhp_grey_3,
-  bhp-grey-4: $bhp_grey_4,
+        bhp-orange-1: $bhp_orange_1,
+        bhp-orange-2: $bhp_orange_2,
+        bhp-orange-3: $bhp_orange_3,
+        bhp-orange-4: $bhp_orange_4,
+        bhp-purple-1: $bhp_purple_1,
+        bhp-purple-2: $bhp_purple_2,
+        bhp-purple-3: $bhp_purple_3,
+        bhp-purple-4: $bhp_purple_4,
+        bhp-blue-1: $bhp_blue_1,
+        bhp-blue-2: $bhp_blue_2,
+        bhp-blue-3: $bhp_blue_3,
+        bhp-blue-4: $bhp_blue_4,
+        bhp-turquoise-1: $bhp_turquoise_1,
+        bhp-turquoise-2: $bhp_turquoise_2,
+        bhp-turquoise-3: $bhp_turquoise_3,
+        bhp-turquoise-4: $bhp_turquoise_4,
+        bhp-green-1: $bhp_green_1,
+        bhp-green-2: $bhp_green_2,
+        bhp-green-3: $bhp_green_3,
+        bhp-green-4: $bhp_green_4,
+        bhp-blue-grey-1: $bhp_blue_grey_1,
+        bhp-blue-grey-2: $bhp_blue_grey_2,
+        bhp-blue-grey-3: $bhp_blue_grey_3,
+        bhp-blue-grey-4: $bhp_blue_grey_4,
+        bhp-grey-1: $bhp_grey_1,
+        bhp-grey-2: $bhp_grey_2,
+        bhp-grey-3: $bhp_grey_3,
+        bhp-grey-4: $bhp_grey_4,
 );
 
-// Color system
+// Utils Theme Colours
 $theme-colors: map-merge($theme-colors, (
-  "primary":    $bhp-orange-1,
-  "success":    $green,
-  "info":       $blue,
-  "warning":    $yellow,
-  "danger":     $red,
+        "primary": $bhp-orange-1,
+        "success": $green,
+        "info": $blue,
+        "warning": $yellow,
+        "danger": $red,
 ));
 $colors: (
-  off-white: $off_white,
+        off-white: $off_white,
 );
 
 // Pagination
@@ -114,12 +114,13 @@ $nav-tabs-link-active-border-color: map-get($theme-colors, primary);
 $nav-tabs-link-active-bg: transparent;
 $btn-disabled-opacity: 0.2;
 
-// Toogle Switch
+// Toggle Switch
 $toggle-switch-padding: 1px;
 $toggle-switch-border-width: 1px;
 $toggle-switch-outer-height: 28px;
 $toggle-switch-font-size: 0.75rem;
 
+// Progress Bar
 //$progress-height: 1.25rem;
 //$progress-font-size: $font-size-base;
 

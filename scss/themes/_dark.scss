@@ -22,18 +22,18 @@ $link-color: $bhp_blue_4;
 $link-hover-color: lighten($link-color, 15%);
 
 // Components
-$border-color: $gray-300 !default;
-$component-active-color: $body-color !default;
+$border-color: rgba($white, .1);
+//$component-active-color: $body-color !default;
 
 // Fonts
 $headings-color: $body-color;
 $hr-border-color: rgba($white, .1);
 
 // Scaffolding
-$gray-subtle: $gray-300;
-$fa-inverse_color: $body-color;
+//$gray-subtle: $gray-300;
+$fa-inverse_color: $dark;
 $text-color: $body-color;
-$btn-secondary-color: $gray-700;
+//$btn-secondary-color: $gray-700;
 
 // Tables
 $table-bg-accent: $gray-800;
@@ -53,25 +53,24 @@ $input-color-placeholder: $gray-300;
 $custom-select-color: $text-color;
 $custom-select-bg: $gray-800;
 $custom-select-disabled-bg: darken($gray-800, 10%);
-
 $custom-control-indicator-bg: $gray-800;
 
 // Form validation
-$form-feedback-valid-color: theme-color("success") !default;
-$form-feedback-invalid-color: theme-color("danger") !default;
+//$form-feedback-valid-color: theme-color("success") !default;
+//$form-feedback-invalid-color: theme-color("danger") !default;
 
 // Dropdowns
-$dropdown-bg: $white !default;
-$dropdown-border-color: rgba($black, .15) !default;
-$dropdown-divider-bg: $gray-200 !default;
-$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
-$dropdown-link-color: $gray-900 !default;
-$dropdown-link-hover-color: darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg: $gray-100 !default;
-$dropdown-link-active-color: $component-active-color !default;
-$dropdown-link-active-bg: $component-active-bg !default;
-$dropdown-link-disabled-color: $gray-600 !default;
-$dropdown-header-color: $gray-600 !default;
+//$dropdown-bg: $white !default;
+//$dropdown-border-color: rgba($black, .15) !default;
+//$dropdown-divider-bg: $gray-200 !default;
+//$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
+//$dropdown-link-color: $gray-900 !default;
+//$dropdown-link-hover-color: darken($gray-900, 5%) !default;
+//$dropdown-link-hover-bg: $gray-100 !default;
+//$dropdown-link-active-color: $component-active-color !default;
+//$dropdown-link-active-bg: $component-active-bg !default;
+//$dropdown-link-disabled-color: $gray-600 !default;
+//$dropdown-header-color: $gray-600 !default;
 
 // Navs
 $nav-link-hover-bg: $gray-800;
@@ -83,9 +82,9 @@ $nav-tabs-active-link-hover-bg: transparent;
 $nav-tabs-active-link-hover-border-color: $nav-tabs-border-color;
 
 // Inverted navbar
-$navbar-inverse-color: $gray-300;
-$navbar-inverse-bg: darken($gray-900, 5%);
-$navbar-inverse-border: darken($gray-900, 5%);
+//$navbar-inverse-color: $gray-300;
+//$navbar-inverse-bg: darken($gray-900, 5%);
+//$navbar-inverse-border: darken($gray-900, 5%);
 
 // Pagination
 $pagination-color: $gray-700;
@@ -118,13 +117,13 @@ $tooltip-color: $black;
 $tooltip-bg: $white;
 
 // Popovers
-$popover-bg: $black;
-$popover-border-color: rgba($white, .2);
-$popover-header-bg: lighten($popover-bg, 3%);
-$popover-header-color: $headings-color !default;
-$popover-body-color: $body-color !default;
-$popover-arrow-color: $popover-bg !default;
-$popover-arrow-outer-color: fade-in($popover-border-color, .05) !default;
+//$popover-bg: $black;
+//$popover-border-color: rgba($white, .2);
+//$popover-header-bg: lighten($popover-bg, 3%);
+//$popover-header-color: $headings-color !default;
+//$popover-body-color: $body-color !default;
+//$popover-arrow-color: $popover-bg !default;
+//$popover-arrow-outer-color: fade-in($popover-border-color, .05) !default;
 
 // Badges
 $badge-color: $body-bg;
@@ -167,17 +166,15 @@ $list-group-border-color: transparent !default;
 $thumbnail-border: lighten($gray-900, 5%);
 
 // Breadcrumbs
-$breadcrumb-bg: $gray-200 !default;
-$breadcrumb-divider-color: $gray-600 !default;
-$breadcrumb-active-color: $gray-600 !default;
+$breadcrumb-bg: $body-color;
+$breadcrumb-divider-color: $body-color;
+$breadcrumb-active-color: $body-color;
 $breadcrumb-bg: lighten($gray-900, 5%);
 $breadcrumb-active-color: $component-active-color;
 
 // Close
 $close-color: $body-color;
 $close-text-shadow: 0 1px 0 $black;
-
-$fa-inverse_color: $dark;
 
 @import 'shared-after';
 

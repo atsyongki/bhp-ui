@@ -6,11 +6,11 @@
     color: $alert-link-color;
   }
   &.alert-success {
-    background-color: rgba(theme-color("success"), 0.5);
+    background-color: rgba(theme-color("success"), 0.4);
     border-left: 5px solid theme-color("success");
   }
   &.alert-info {
-    background-color: rgba(theme-color("info"), 0.5);
+    background-color: rgba(theme-color("info"), 0.3);
     border-left: 5px solid theme-color("info");
   }
   &.alert-warning {
@@ -18,7 +18,7 @@
     border-left: 5px solid theme-color("warning");
   }
   &.alert-danger {
-    background-color: rgba(theme-color("danger"), 0.5);
+    background-color: rgba(theme-color("danger"), 0.4);
     border-left: 5px solid theme-color("danger");
   }
 }

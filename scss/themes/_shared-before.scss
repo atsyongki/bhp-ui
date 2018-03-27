@@ -76,11 +76,11 @@ $bhp-colors: (
         bhp-grey-1: $bhp_grey_1,
         bhp-grey-2: $bhp_grey_2,
         bhp-grey-3: $bhp_grey_3,
-        bhp-grey-4: $bhp_grey_4,
+        bhp-grey-4: $bhp_grey_4
 );
 
 // Utils Colours Variables
-$black: $gray-900;
+$black: #111;
 $red: #ee5f5b;
 $green: #5cb85c;
 $yellow: #f0ad4e;
@@ -95,12 +95,12 @@ $theme-colors: map-merge($theme-colors, (
         "success": $green,
         "info": $blue,
         "warning": $yellow,
-        "danger": $red,
+        "danger": $red
 ));
 $colors: (
         off-white: $off_white,
         selected: $selected,
-        selected-hover: $selected-hover,
+        selected-hover: $selected-hover
 );
 
 // Buttons

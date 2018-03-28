@@ -1,5 +1,4 @@
 // Dark Theme Variables
-
 @import 'shared-before';
 
 // Color system
@@ -57,12 +56,12 @@ $text-color: $body-color;
 //$btn-secondary-color: $gray-700;
 
 // Tables
-$table-bg:                    $gray-600;
-$table-accent-bg:             $gray-700;
-$table-hover-bg:              $gray-900;
-$table-border-color:          $body-bg;
-$table-head-color:            $body-color;
-$table-head-bg:               $gray-500;
+$table-bg: $gray-600;
+$table-accent-bg: $gray-700;
+$table-hover-bg: $gray-900;
+$table-border-color: $body-bg;
+$table-head-color: $body-color;
+$table-head-bg: $gray-500;
 
 // Forms
 //$input-bg: $gray-900;
@@ -155,7 +154,7 @@ $progress-bg: $gray-700;
 
 // List groups
 $list-group-bg: $gray-800;
-$list-group-border-color: rgba($white, .125);;
+$list-group-border-color: rgba($white, .125);
 $list-group-hover-bg: $gray-800;
 $list-group-disabled-color: $gray-300;
 $list-group-disabled-bg: $list-group-bg;

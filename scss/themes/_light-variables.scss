@@ -1,6 +1,6 @@
-// Light Theme Variables
+@import 'shared-variables';
 
-@import 'shared-before';
+// Light Theme Variables
 
 // Body
 $body-bg: map-get($colors, off-white);

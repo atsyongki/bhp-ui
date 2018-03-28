@@ -31,23 +31,20 @@ of an active project. Two major entry points in `scss/index-dark.scss` and
 `scss/index-light.scss` which may be sufficient for your needs, and which are
 also provided as simple examples of how to use the SCSS.
 
-If you want to customise the SCSS, you can create an `scss` file in your
+If you want to create new theme, you can create a new `scss` file in your
 repository containing
-
+ex. blue theme
 ```
-@import '~bhp-ui/scss/themes/light';
-@import '~bhp-ui/scss/0-root';
-@import '~bhp-ui/scss/1-base';
+@import 'base';
+@import 'themes/blue-variables';
 
-.light-theme {
-  @import '~bhp-ui/scss/2-within-theme';
+.blue-theme {
+  @import 'components';
 }
 
 ```
 
 The order of the files is important and they are described below:
 
-1. `themes/light`: specifies the variables for the light theme;
-2. `0-root`: includes reboot styles. Does not depend on any theme variables;
-3. `1-base`: contains mixings and variables (no styles);
-4. `2-within-theme`: contains the bulk of styles.
+1. `themes/blue-variables`: specifies the variables for the light theme;
+2. `components`: contains the bulk of styles.

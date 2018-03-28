@@ -48,6 +48,7 @@ $component-active-color: $body-color;
 // Fonts
 $headings-color: $body-color;
 $hr-border-color: $border-color;
+$text-muted: $body-color;
 
 // Scaffolding
 //$gray-subtle: $gray-300;
@@ -92,6 +93,8 @@ $table-head-bg:               $gray-500;
 //$dropdown-header-color: $gray-600 !default;
 
 // Navs
+$nav-tabs-link-color: $body-color;
+$nav-tabs-active-link-color: $body-color;
 $nav-tabs-border-color: $gray-500;
 $nav-tabs-link-hover-border-color: $nav-tabs-border-color;
 
@@ -156,6 +159,9 @@ $list-group-border-color: rgba($white, .125);;
 $list-group-hover-bg: $gray-800;
 $list-group-disabled-color: $gray-300;
 $list-group-disabled-bg: $list-group-bg;
+$list-group-action-color: $body-color;
+$list-group-action-hover-color: $body-color;
+$list-group-header-color: $body-color;
 
 // Image Thumbnails
 //$thumbnail-bg: transparent;
@@ -172,6 +178,11 @@ $breadcrumb-active-color: $component-active-color;
 $close-color: $body-color;
 $close-text-shadow: 0 1px 0 $black;
 
-@import 'shared-after';
+// Alerts
+$alert-text-color: $body-color;
+$alert-link-color: $body-color;
+
+// Toggle Switch
+$toggle-switch-border-color: $body-color;
 
 

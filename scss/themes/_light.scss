@@ -8,6 +8,9 @@ $body-bg: map-get($colors, off-white);
 // Links
 $link-color: $bhp_blue_3;
 
+// Fonts
+$text-muted: $body-color;
+
 // Scaffolding
 $fa-inverse_color: $white;
 
@@ -21,4 +24,18 @@ $table-border-color:          $gray-300;
 $table-head-bg:               $gray-200;
 $table-head-color:            $body-color;
 
-@import 'shared-after';
+// Navs
+$nav-tabs-link-color: $body-color;
+$nav-tabs-active-link-color: $body-color;
+
+// List Group
+$list-group-action-color: $body-color;
+$list-group-action-hover-color: $body-color;
+$list-group-header-color: $body-color;
+
+// Alerts
+$alert-text-color: $body-color;
+$alert-link-color: $body-color;
+
+// Toggle Switch
+$toggle-switch-border-color: $body-color;

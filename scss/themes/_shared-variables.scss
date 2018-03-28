@@ -137,3 +137,6 @@ $list-group-active-color: $black;
 $list-group-active-bg: map-get($colors, selected);
 $list-group-active-bg-hover: map-get($colors, selected-hover);
 $list-group-active-border-color: $list-group-border-color;
+
+// Nav link
+$nav-link-padding-y: 1rem;

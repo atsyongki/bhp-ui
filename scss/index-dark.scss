@@ -1,7 +1,6 @@
 @import 'base';
-@import 'themes/dark-colors';
-@import 'do-not-change/variables_reset';
-@import 'themes/dark-variables';
+@import 'themes/dark/dark-colors';
+@import 'themes/dark/dark-variables';
 
 .dark-theme {
   @import 'components';

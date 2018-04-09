@@ -1,71 +1,5 @@
 // Shared Colors
 
-//
-// Color system
-//
-
-$white: #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black: #000;
-
-$grays: ();
-$grays: map-merge((
-        "100": $gray-100,
-        "200": $gray-200,
-        "300": $gray-300,
-        "400": $gray-400,
-        "500": $gray-500,
-        "600": $gray-600,
-        "700": $gray-700,
-        "800": $gray-800,
-        "900": $gray-900
-), $grays);
-
-$blue: #03A9F4;
-$indigo: #6610f2;
-$purple: #6f42c1;
-$pink: #e83e8c;
-$red: #ee5f5b;
-$orange: #fd7e14;
-$yellow: #f0ad4e;
-$green: #5cb85c;
-$teal: #20c997;
-$cyan: #17a2b8;
-
-$colors: ();
-$colors: map-merge((
-        "blue": $blue,
-        "indigo": $indigo,
-        "purple": $purple,
-        "pink": $pink,
-        "red": $red,
-        "orange": $orange,
-        "yellow": $yellow,
-        "green": $green,
-        "teal": $teal,
-        "cyan": $cyan,
-        "white": $white,
-        "gray": $gray-600,
-        "gray-dark": $gray-800
-), $colors);
-
-$primary: $blue;
-$secondary: $gray-600;
-$success: $green;
-$info: $cyan;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-100;
-$dark: $gray-800;
-
 // BHP Colors Variables
 $bhp_orange_1: #dd5900;
 $bhp_orange_2: #f77f00;
@@ -128,23 +62,47 @@ $bhp-colors: (
         bhp-grey-4: $bhp_grey_4
 );
 
-$theme-colors: ();
-$theme-colors: map-merge((
+//
+// Color system
+//
+
+$blue: $bhp_blue_3;
+$indigo: $bhp_purple_1;
+$purple: $bhp_purple_2;
+$pink: $bhp_purple_3;
+$red: #ee5f5b;
+$orange: $bhp_orange_1;
+$yellow: $bhp_orange_3;
+$green: #5cb85c;
+$teal: $bhp_green_2;
+$cyan: $bhp_turquoise_2;
+
+$colors: map-merge($colors, (
+        "blue": $blue,
+        "indigo": $indigo,
+        "purple": $purple,
+        "pink": $pink,
+        "red": $red,
+        "orange": $orange,
+        "yellow": $yellow,
+        "green": $green,
+        "teal": $teal,
+        "cyan": $cyan,
+        "white": $white,
+        "gray": $gray-600,
+        "gray-dark": $gray-800
+));
+
+$primary: $bhp-orange-1;
+
+$theme-colors: map-merge($theme-colors, (
         "primary": $bhp-orange-1,
-        "secondary": $secondary,
-        "success": $success,
-        "info": $blue,
-        "warning": $warning,
-        "danger": $danger,
-        "light": $light,
-        "dark": $dark
-), $theme-colors);
+));
 
 // Utils Colors Variables
 $selected: #F9F9D9;
 $selected-hover: #F1F1BF;
 
-// Utils Theme Colors
 $colors: (
         selected: $selected,
         selected-hover: $selected-hover

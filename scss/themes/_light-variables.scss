@@ -2,38 +2,6 @@
 
 // Light Theme Variables
 
-// Color system
-$gray-100: #faf9f7;
-$gray-200: #eae7e1;
-$gray-300: #e3ddce;
-$gray-400: #d1c7ae;
-$gray-500: #beb18d;
-$gray-600: #928153;
-$gray-700: #726441;
-$gray-800: #51472e;
-$gray-900: #312b1c;
-$black: #100e09;
-
-$grays: map-merge($grays, (
-        "100": $gray-100,
-        "200": $gray-200,
-        "300": $gray-300,
-        "400": $gray-400,
-        "500": $gray-500,
-        "600": $gray-600,
-        "700": $gray-700,
-        "800": $gray-800,
-        "900": $gray-900
-));
-
-// Utils Colours
-$off_white: #f8f6f2;
-
-// Utils Theme Colours
-$colors: map-merge($colors, (
-        off-white: $off_white
-));
-
 // Body
 $body-bg: map-get($colors, off-white);
 

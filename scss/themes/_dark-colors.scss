@@ -1,0 +1,42 @@
+@import 'shared-colors';
+
+// Dark Theme Colors
+
+// Color system
+$gray-100: #EBEBEB;
+$gray-200: #C8C8C8;
+$gray-300: #767684;
+$gray-400: #60606D;
+$gray-500: #5E5E6B;
+$gray-600: #525361;
+$gray-700: #494A58;
+$gray-800: #3F414E;
+$gray-900: #353744;
+$black: #111;
+
+$grays: map-merge($grays, (
+        "100": $gray-100,
+        "200": $gray-200,
+        "300": $gray-300,
+        "400": $gray-400,
+        "500": $gray-500,
+        "600": $gray-600,
+        "700": $gray-700,
+        "800": $gray-800,
+        "900": $gray-900
+));
+
+$colors: map-merge($colors, (
+        "gray": $gray-600,
+        "gray-dark": $gray-800
+));
+
+$secondary: $gray-400;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: map-merge($theme-colors, (
+        "secondary": $secondary,
+        "light": $light,
+        "dark": $dark
+));

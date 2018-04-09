@@ -1,4 +1,5 @@
 // Shared Variables
+
 html {
   body {
     -webkit-font-smoothing: antialiased;
@@ -16,92 +17,6 @@ $font-size-xs: .875rem;
     font-size: 1rem;
   }
 }
-
-// BHP Colours Variables
-$bhp_orange_1: #dd5900;
-$bhp_orange_2: #f77f00;
-$bhp_orange_3: #fcba5e;
-$bhp_orange_4: #ffd691;
-$bhp_purple_1: #663366;
-$bhp_purple_2: #993399;
-$bhp_purple_3: #cc6699;
-$bhp_purple_4: #e8e0e8;
-$bhp_blue_1: #1d4f91;
-$bhp_blue_2: #0a6cb4;
-$bhp_blue_3: #0099cc;
-$bhp_blue_4: #d7ebff;
-$bhp_turquoise_1: #01515f;
-$bhp_turquoise_2: #007E98;
-$bhp_turquoise_3: #6ec9da;
-$bhp_turquoise_4: #cee9ef;
-$bhp_green_1: #035d55;
-$bhp_green_2: #06ad96;
-$bhp_green_3: #abcc66;
-$bhp_green_4: #e0e9af;
-$bhp_blue_grey_1: #2b5368;
-$bhp_blue_grey_2: #45768b;
-$bhp_blue_grey_3: #6ba4b8;
-$bhp_blue_grey_4: #bfced6;
-$bhp_grey_1: #252525;
-$bhp_grey_2: #666666;
-$bhp_grey_3: #b7b9bb;
-$bhp_grey_4: #e7e2d5;
-
-// BHP Theme Colours
-$bhp-colors: (
-        bhp-orange-1: $bhp_orange_1,
-        bhp-orange-2: $bhp_orange_2,
-        bhp-orange-3: $bhp_orange_3,
-        bhp-orange-4: $bhp_orange_4,
-        bhp-purple-1: $bhp_purple_1,
-        bhp-purple-2: $bhp_purple_2,
-        bhp-purple-3: $bhp_purple_3,
-        bhp-purple-4: $bhp_purple_4,
-        bhp-blue-1: $bhp_blue_1,
-        bhp-blue-2: $bhp_blue_2,
-        bhp-blue-3: $bhp_blue_3,
-        bhp-blue-4: $bhp_blue_4,
-        bhp-turquoise-1: $bhp_turquoise_1,
-        bhp-turquoise-2: $bhp_turquoise_2,
-        bhp-turquoise-3: $bhp_turquoise_3,
-        bhp-turquoise-4: $bhp_turquoise_4,
-        bhp-green-1: $bhp_green_1,
-        bhp-green-2: $bhp_green_2,
-        bhp-green-3: $bhp_green_3,
-        bhp-green-4: $bhp_green_4,
-        bhp-blue-grey-1: $bhp_blue_grey_1,
-        bhp-blue-grey-2: $bhp_blue_grey_2,
-        bhp-blue-grey-3: $bhp_blue_grey_3,
-        bhp-blue-grey-4: $bhp_blue_grey_4,
-        bhp-grey-1: $bhp_grey_1,
-        bhp-grey-2: $bhp_grey_2,
-        bhp-grey-3: $bhp_grey_3,
-        bhp-grey-4: $bhp_grey_4
-);
-
-// Utils Colours Variables
-$black: #111;
-$red: #ee5f5b;
-$green: #5cb85c;
-$yellow: #f0ad4e;
-$blue: #03A9F4;
-$off_white: #FAFBFC;
-$selected: #F9F9D9;
-$selected-hover: #F1F1BF;
-
-// Utils Theme Colours
-$theme-colors: map-merge($theme-colors, (
-        "primary": $bhp-orange-1,
-        "success": $green,
-        "info": $blue,
-        "warning": $yellow,
-        "danger": $red
-));
-$colors: (
-        off-white: $off_white,
-        selected: $selected,
-        selected-hover: $selected-hover
-);
 
 // Buttons
 $btn-font-weight: $font-weight-bold;

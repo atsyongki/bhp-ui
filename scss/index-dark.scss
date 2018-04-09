@@ -1,7 +1,7 @@
-@import 'themes/dark';
-@import '0-root';
-@import '1-base';
+@import 'base';
+@import 'themes/dark/dark-colors';
+@import 'themes/dark/dark-variables';
 
 .dark-theme {
-  @import '2-within-theme';
+  @import 'components';
 }

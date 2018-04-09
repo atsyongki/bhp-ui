@@ -1,0 +1,159 @@
+@import '../../do-not-change/variables_reset';
+@import '../shared-variables';
+
+// Dark Theme Variables
+
+// Utils Colors
+$secondary: $gray-400;
+
+// Body
+$body-bg: $gray-900;
+$body-color: $white;
+
+// Links
+$link-color: $bhp_blue_4;
+$link-hover-color: lighten($link-color, 15%);
+
+// Components
+$border-color: rgba($white, .2);
+$component-active-color: $body-color;
+
+// Fonts
+$headings-color: $body-color;
+$hr-border-color: $border-color;
+$text-muted: $body-color;
+
+// Scaffolding
+//$gray-subtle: $gray-300;
+$fa-inverse_color: $dark;
+$text-color: $body-color;
+//$btn-secondary-color: $gray-700;
+
+// Tables
+$table-bg: $gray-600;
+$table-accent-bg: $gray-700;
+$table-hover-bg: $gray-900;
+$table-border-color: $body-bg;
+$table-head-color: $body-color;
+$table-head-bg: $gray-500;
+
+// Forms
+//$input-bg: $gray-900;
+//$input-border-color: $gray-900;
+//$input-disabled-bg: lighten($gray-900, 5%);
+//$input-color: $gray-900;
+//$input-border: $gray-900;
+//$input-border-focus: $white;
+//$input-group-addon-bg: lighten($gray-900, 18%);
+//$input-group-addon-border-color: transparent;
+//$input-color-placeholder: $gray-300;
+//$custom-select-color: $text-color;
+//$custom-select-bg: $gray-900;
+//$custom-select-disabled-bg: darken($gray-900, 10%);
+//$custom-control-indicator-bg: $gray-900;
+
+// Dropdowns
+//$dropdown-bg: $white !default;
+//$dropdown-border-color: rgba($black, .15) !default;
+//$dropdown-divider-bg: $gray-200 !default;
+//$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
+//$dropdown-link-color: $gray-900 !default;
+//$dropdown-link-hover-color: darken($gray-900, 5%) !default;
+//$dropdown-link-hover-bg: $gray-100 !default;
+//$dropdown-link-active-color: $component-active-color !default;
+//$dropdown-link-active-bg: $component-active-bg !default;
+//$dropdown-link-disabled-color: $gray-600 !default;
+//$dropdown-header-color: $gray-600 !default;
+
+// Navs
+$nav-tabs-link-color: $body-color;
+$nav-tabs-active-link-color: $body-color;
+$nav-tabs-border-color: $gray-500;
+$nav-tabs-link-hover-border-color: $nav-tabs-border-color;
+
+// Pagination
+$pagination-color: $gray-700;
+$pagination-bg: $gray-900;
+$pagination-border-color: $gray-800;
+$pagination-hover-border-color: $gray-800;
+
+$pagination-hover-color: $body-color;
+$pagination-hover-bg: $gray-800;
+$pagination-hover-border: $pagination-hover-bg;
+
+$pagination-active-color: $component-active-color;
+$pagination-active-bg: $gray-700;
+$pagination-active-border: $gray-700;
+
+$pagination-disabled-color: $gray-700;
+$pagination-disabled-bg: transparent;
+$pagination-disabled-border: $gray-800;
+
+// Jumbotron
+$jumbotron-bg: $gray-700;
+
+// Cards
+$card-border-color: rgba($white, .125);
+$card-cap-bg: rgba($white, .1);
+$card-bg: $gray-800;
+
+// Tooltips
+$tooltip-bg: $body-bg;
+$tooltip-color: $gray-600;
+
+// Popovers
+$popover-bg: $gray-600;
+$popover-border-color: $border-color;
+$popover-header-bg: lighten($popover-bg, 3%);
+
+$popover-header-color: $headings-color;
+$popover-body-color: $body-color;
+$popover-arrow-color: $popover-bg;
+$popover-arrow-outer-color: fade-in($popover-border-color, .05);
+
+// Badges
+$badge-color: $body-bg;
+$badge-bg: $white;
+
+// Modals
+$modal-content-bg: $body-bg;
+$modal-content-border-color: $border-color;
+$modal-backdrop-bg: $black;
+$modal-backdrop-opacity: .7;
+$modal-header-border-color: $border-color;
+$modal-footer-border-color: $modal-header-border-color;
+
+// Progress bars
+$progress-bg: $gray-700;
+
+// List groups
+$list-group-bg: $gray-800;
+$list-group-border-color: rgba($white, .125);
+$list-group-hover-bg: $gray-800;
+$list-group-disabled-color: $gray-300;
+$list-group-disabled-bg: $list-group-bg;
+$list-group-action-color: $body-color;
+$list-group-action-hover-color: $body-color;
+$list-group-header-color: $body-color;
+
+// Image Thumbnails
+//$thumbnail-bg: transparent;
+$thumbnail-border: lighten($gray-900, 5%);
+
+// Breadcrumbs
+$breadcrumb-bg: $body-color;
+$breadcrumb-divider-color: $body-color;
+$breadcrumb-active-color: $body-color;
+$breadcrumb-bg: lighten($gray-900, 5%);
+$breadcrumb-active-color: $component-active-color;
+
+// Close
+$close-color: $body-color;
+$close-text-shadow: 0 1px 0 $black;
+
+// Alerts
+$alert-text-color: $body-color;
+$alert-link-color: $body-color;
+
+// Toggle Switch
+$toggle-switch-border-color: $body-color;

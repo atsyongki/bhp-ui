@@ -3,11 +3,20 @@
     border-top: 0;
     border-right: 0;
     border-left: 0;
-
+    @extend .font-weight-bold;
     color: $nav-tabs-link-color;
     cursor: pointer;
+    @include hover-focus {
+      //color: rgba($nav-tabs-link-color, 1) ;
+      border-bottom-width: $nav-tabs-link-hover-border-width;
+    }
+    &.active {
+      color: $nav-tabs-active-link-color;
+    }
+    &.disabled {
+      color: $nav-link-disabled-color;
+    }
   }
-
   .nav-link.active,
   .nav-item.show .nav-link {
     border-width: $nav-tabs-link-active-border-width;

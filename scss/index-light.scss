@@ -1,7 +1,7 @@
-@import 'themes/light';
-@import '0-root';
-@import '1-base';
+@import 'base';
+@import 'themes/light/light-colors';
+@import 'themes/light/light-variables';
 
 .light-theme {
-  @import '2-within-theme';
+  @import 'components';
 }

@@ -1,0 +1,57 @@
+// Shared Variables
+
+html {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+$font-family-base: 'Roboto', Arial, sans-serif;
+$font-size-xs: .875rem;
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+// Buttons
+$btn-font-weight: $font-weight-bold;
+
+// Pagination
+//$pagination-bg: none;
+//$pagination-border-width: 0;
+$pagination-active-color: map-get($theme-colors, primary);
+$pagination-active-color: map-get($theme-colors, primary);
+//$pagination-active-bg: none;
+
+// Nav Tabs
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-hover-border-width: 4px;
+$nav-tabs-link-active-border-width: 4px;
+$nav-tabs-link-active-border-color: map-get($theme-colors, primary);
+$nav-tabs-link-active-bg: transparent;
+$btn-disabled-opacity: 0.2;
+
+// Toggle Switch
+$toggle-switch-padding: 1px;
+$toggle-switch-border-width: 1px;
+$toggle-switch-outer-height: 28px;
+$toggle-switch-font-size: 0.75rem;
+
+// Spinner
+$spinner-size: 4rem;
+$spinner-size-sm: 2rem;
+$spinner-size-lg: 6rem;
+
+// List Group
+$list-group-active-color: $black;
+$list-group-active-bg: map-get($colors, selected);
+$list-group-active-bg-hover: map-get($colors, selected-hover);
+$list-group-active-border-color: $list-group-border-color;
+
+// Nav link
+$nav-link-padding-y: 1rem;

@@ -66,7 +66,7 @@ $bhp-colors: (
 // Color system
 //
 
-$blue: $bhp_blue_3;
+$blue: $bhp_blue_2;
 $indigo: $bhp_purple_1;
 $purple: $bhp_purple_2;
 $pink: $bhp_purple_3;
@@ -75,7 +75,7 @@ $orange: $bhp_orange_1;
 $yellow: $bhp_orange_3;
 $green: #5cb85c;
 $teal: $bhp_green_2;
-$cyan: $bhp_turquoise_2;
+$cyan: $bhp_blue_3;
 
 $colors: map-merge($colors, (
         "blue": $blue,
@@ -94,9 +94,23 @@ $colors: map-merge($colors, (
 ));
 
 $primary: $bhp-orange-1;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
 
 $theme-colors: map-merge($theme-colors, (
-        "primary": $bhp-orange-1,
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark
 ));
 
 // Utils Colors Variables

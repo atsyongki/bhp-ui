@@ -24,27 +24,21 @@ Download the `css/index-dark.css` or `css/index-light.css` files and add them
 to your static site. You need to add `class="light-theme"` or
 `class="dark-theme"` to the root `html` element of your project.
 
-## Using the SCSS
+## Structure
 
-The SCSS is designed so that it can be included and extended within the context
-of an active project. Two major entry points in `scss/index-dark.scss` and
-`scss/index-light.scss` which may be sufficient for your needs, and which are
-also provided as simple examples of how to use the SCSS.
+In order to support multiple themes is important that files are loaded as described below:
 
-If you want to create new theme, you can create a new `scss` file in your
-repository containing
-ex. blue theme
 ```
 @import 'base';
-@import 'themes/blue-variables';
+@import 'themes/light/light-colors';
+@import 'themes/light/light-variables';
 
-.blue-theme {
+.light-theme {
   @import 'components';
 }
-
 ```
 
-The order of the files is important and they are described below:
-
-1. `themes/blue-variables`: specifies the variables for the light theme;
-2. `components`: contains the bulk of styles.
+1. `base`: loads the core base functions, variables and mixins;
+1. `themes/light/light-color`: specifies the colour pattern for the theme;
+1. `themes/light/light-variables`: specifies the styling variables for the theme;
+2. `components`: contains the bulk component styles

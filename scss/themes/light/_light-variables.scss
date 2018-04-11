@@ -9,6 +9,9 @@ $body-bg: map-get($colors, off-white);
 // Links
 $link-color: $bhp_blue_3;
 
+// Components
+$border-color: rgba($black, .2);
+
 // Fonts
 $text-muted: $body-color;
 
@@ -17,6 +20,9 @@ $fa-inverse_color: $white;
 
 // Tables
 $table-accent-bg: $gray-100;
+$table-border-color: $border-color;
+$table-head-color: $body-color;
+$table-tr-bg: $white;
 
 // Navs
 $nav-tabs-link-color: $body-color;

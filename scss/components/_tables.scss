@@ -1,0 +1,44 @@
+// Table Default
+
+.table {
+
+  // Table Header
+  > thead {
+    > tr {
+      //background: $gray-300;
+      > th,
+      > td {
+        //line-height: normal;
+        //border-bottom-width: 1px;
+        border-width: 1px;
+      }
+      > th {
+        border-top: none;
+      }
+    }
+  }
+
+  // Table Body
+  > tbody {
+    > tr {
+      background-color: $white;
+      //&:nth-child(odd) {
+      //  background: $white;
+      //}
+      &:last-child {
+        > th,
+        > td {
+          border-bottom: 1px solid $gray-300;
+        }
+      }
+    }
+  }
+}
+
+//.table {
+//  .table-striped {
+//    tbody tr:nth-of-type(#{$table-striped-order}) {
+//      background-color: $table-accent-bg;
+//    }
+//  }
+//}

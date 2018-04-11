@@ -5,11 +5,8 @@
   // Table Header
   > thead {
     > tr {
-      //background: $gray-300;
       > th,
       > td {
-        //line-height: normal;
-        //border-bottom-width: 1px;
         border-width: 1px;
       }
       > th {
@@ -21,10 +18,7 @@
   // Table Body
   > tbody {
     > tr {
-      background-color: $white;
-      //&:nth-child(odd) {
-      //  background: $white;
-      //}
+      background-color: $table-tr-bg;
       &:last-child {
         > th,
         > td {
@@ -34,11 +28,3 @@
     }
   }
 }
-
-//.table {
-//  .table-striped {
-//    tbody tr:nth-of-type(#{$table-striped-order}) {
-//      background-color: $table-accent-bg;
-//    }
-//  }
-//}

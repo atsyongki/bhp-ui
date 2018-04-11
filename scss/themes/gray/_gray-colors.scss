@@ -1,0 +1,11 @@
+@import '../../do-not-change/colours_reset';
+@import '../shared-colors';
+
+// Gray Theme Colors
+
+// Color system
+$off_white: #f8f6f2;
+
+$colors: map-merge($colors, (
+        off-white: $off_white
+));

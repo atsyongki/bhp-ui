@@ -33,12 +33,12 @@ $text-color: $body-color;
 //$btn-secondary-color: $gray-700;
 
 // Tables
-$table-accent-bg: $gray-700;
-$table-hover-bg: $gray-800;
-$table-border-color: $gray-900;
-$table-head-bg: $gray-500;
+$table-accent-bg: $gray-800;
+$table-hover-bg: $gray-900;
+$table-border-color: $body-bg;
+$table-head-bg: $gray-600;
 $table-head-color: $body-color;
-$table-tr-bg: $gray-600;
+$table-tr-bg: $gray-700;
 
 // Forms
 $input-bg: $gray-900;
@@ -53,7 +53,7 @@ $input-border-focus: $white;
 $input-color-placeholder: $gray-300;
 
 $input-group-addon-color: $text-color;
-$input-group-addon-bg: $gray-400;
+$input-group-addon-bg: $gray-500;
 $input-group-addon-border-color: $border-color;
 
 $custom-select-color: $text-color;
@@ -102,9 +102,9 @@ $pagination-disabled-border: $gray-800;
 $jumbotron-bg: $gray-700;
 
 // Cards
-$card-border-color: rgba($white, .125);
-$card-cap-bg: rgba($white, .1);
-$card-bg: $gray-900;
+$card-border-color: rgba($white, .15);
+$card-cap-bg: rgba($white, .125);
+$card-bg: $gray-800;
 
 // Tooltips
 $tooltip-bg: $body-bg;
@@ -125,7 +125,7 @@ $badge-color: $body-bg;
 $badge-bg: $white;
 
 // Modals
-$modal-content-bg: $gray-900;
+$modal-content-bg: $gray-800;
 $modal-content-border-color: $border-color;
 $modal-backdrop-bg: $black;
 $modal-backdrop-opacity: .7;
@@ -136,9 +136,9 @@ $modal-footer-border-color: $modal-header-border-color;
 $progress-bg: $gray-700;
 
 // List groups
-$list-group-bg: $gray-900;
+$list-group-bg: $gray-800;
 $list-group-border-color: rgba($white, .125);
-$list-group-hover-bg: $gray-900;
+$list-group-hover-bg: $gray-800;
 $list-group-disabled-color: $gray-300;
 $list-group-disabled-bg: $list-group-bg;
 $list-group-action-color: $body-color;
@@ -147,13 +147,13 @@ $list-group-header-color: $body-color;
 
 // Image Thumbnails
 //$thumbnail-bg: transparent;
-$thumbnail-border: lighten($gray-900, 5%);
+$thumbnail-border: lighten($gray-800, 5%);
 
 // Breadcrumbs
 $breadcrumb-bg: $body-color;
 $breadcrumb-divider-color: $body-color;
 $breadcrumb-active-color: $body-color;
-$breadcrumb-bg: lighten($gray-900, 5%);
+$breadcrumb-bg: lighten($gray-800, 5%);
 $breadcrumb-active-color: $component-active-color;
 
 // Close

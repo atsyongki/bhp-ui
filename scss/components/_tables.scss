@@ -5,10 +5,10 @@
   // Table Header
   > thead {
     > tr {
-      > th,
-      > td {
-        border-width: 1px;
-      }
+      //> th,
+      //> td {
+      //  border-width: 1px;
+      //}
       > th {
         border-top: none;
       }
@@ -22,7 +22,7 @@
       &:last-child {
         > th,
         > td {
-          border-bottom: 1px solid $gray-300;
+          border-bottom: 1px solid $border-color;
         }
       }
     }

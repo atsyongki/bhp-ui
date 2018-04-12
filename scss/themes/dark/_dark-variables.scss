@@ -3,11 +3,14 @@
 
 // Dark Theme Variables
 
+// Body
+$body-bg: map-get($colors, off-black);
+
 // Utils Colors
 $secondary: $gray-400;
 
 // Body
-$body-bg: $gray-900;
+$body-bg: $body-bg;
 $body-color: $white;
 
 // Links
@@ -31,26 +34,32 @@ $text-color: $body-color;
 
 // Tables
 $table-accent-bg: $gray-700;
-$table-hover-bg: $gray-900;
-$table-border-color: $body-bg;
+$table-hover-bg: $gray-800;
+$table-border-color: $gray-900;
 $table-head-bg: $gray-500;
 $table-head-color: $body-color;
 $table-tr-bg: $gray-600;
 
 // Forms
-//$input-bg: $gray-900;
-//$input-border-color: $gray-900;
-//$input-disabled-bg: lighten($gray-900, 5%);
-//$input-color: $gray-900;
-//$input-border: $gray-900;
-//$input-border-focus: $white;
-//$input-group-addon-bg: lighten($gray-900, 18%);
-//$input-group-addon-border-color: transparent;
-//$input-color-placeholder: $gray-300;
-//$custom-select-color: $text-color;
-//$custom-select-bg: $gray-900;
+$input-bg: $gray-900;
+$input-disabled-bg: $gray-600;
+$input-color: $text-color;
+$input-border-color: $border-color;
+
+//$input-border: $border-color;
+
+$input-border-focus: $white;
+
+$input-color-placeholder: $gray-300;
+
+$input-group-addon-color: $text-color;
+$input-group-addon-bg: $gray-400;
+$input-group-addon-border-color: $border-color;
+
+$custom-select-color: $text-color;
+$custom-select-bg: $gray-900;
 //$custom-select-disabled-bg: darken($gray-900, 10%);
-//$custom-control-indicator-bg: $gray-900;
+$custom-control-indicator-bg: $gray-900;
 
 // Dropdowns
 //$dropdown-bg: $white !default;
@@ -95,14 +104,14 @@ $jumbotron-bg: $gray-700;
 // Cards
 $card-border-color: rgba($white, .125);
 $card-cap-bg: rgba($white, .1);
-$card-bg: $gray-800;
+$card-bg: $gray-900;
 
 // Tooltips
 $tooltip-bg: $body-bg;
-$tooltip-color: $gray-600;
+$tooltip-color: $gray-500;
 
 // Popovers
-$popover-bg: $gray-600;
+$popover-bg: $gray-500;
 $popover-border-color: $border-color;
 $popover-header-bg: lighten($popover-bg, 3%);
 
@@ -116,7 +125,7 @@ $badge-color: $body-bg;
 $badge-bg: $white;
 
 // Modals
-$modal-content-bg: $body-bg;
+$modal-content-bg: $gray-900;
 $modal-content-border-color: $border-color;
 $modal-backdrop-bg: $black;
 $modal-backdrop-opacity: .7;
@@ -127,9 +136,9 @@ $modal-footer-border-color: $modal-header-border-color;
 $progress-bg: $gray-700;
 
 // List groups
-$list-group-bg: $gray-800;
+$list-group-bg: $gray-900;
 $list-group-border-color: rgba($white, .125);
-$list-group-hover-bg: $gray-800;
+$list-group-hover-bg: $gray-900;
 $list-group-disabled-color: $gray-300;
 $list-group-disabled-bg: $list-group-bg;
 $list-group-action-color: $body-color;

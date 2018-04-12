@@ -1,0 +1,7 @@
+@import 'base';
+@import 'themes/silver/silver-colors';
+@import 'themes/silver/silver-variables';
+
+.dark-theme {
+  @import 'components';
+}

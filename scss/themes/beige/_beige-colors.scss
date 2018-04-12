@@ -1,0 +1,45 @@
+@import '../../do-not-change/colours_reset';
+@import '../shared-colors';
+
+// Beige Theme Colors
+
+// Color system
+$off_white: #f8f6f2;
+$gray-100: #faf9f7;
+$gray-200: #eae7e1;
+$gray-300: #E3E0DA;
+$gray-400: #DBD8CF;
+$gray-500: #CBC7BB;
+$gray-600: #817F7C;
+$gray-700: #4F4D48;
+$gray-800: #3A3935;
+$gray-900: #2C2B28;
+$black: #171715;
+
+$grays: map-merge($grays, (
+        "100": $gray-100,
+        "200": $gray-200,
+        "300": $gray-300,
+        "400": $gray-400,
+        "500": $gray-500,
+        "600": $gray-600,
+        "700": $gray-700,
+        "800": $gray-800,
+        "900": $gray-900
+));
+
+$colors: map-merge($colors, (
+        "gray": $gray-600,
+        "gray-dark": $gray-800,
+        off-white: $off_white
+));
+
+$secondary: $gray-600;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: map-merge($theme-colors, (
+        "secondary": $secondary,
+        "light": $light,
+        "dark": $dark
+));

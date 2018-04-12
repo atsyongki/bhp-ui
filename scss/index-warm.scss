@@ -1,0 +1,7 @@
+@import 'base';
+@import 'themes/warm/warm-colors';
+@import 'themes/warm/warm-variables';
+
+.warm-theme {
+  @import 'components';
+}

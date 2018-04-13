@@ -10,7 +10,7 @@ $body-bg: map-get($colors, off-white);
 $link-color: $bhp_blue_3;
 
 // Components
-$border-color: rgba($black, .15);
+$border-color: rgba($black, .2);
 
 // Fonts
 $text-muted: $body-color;
@@ -23,6 +23,10 @@ $table-accent-bg: $gray-100;
 $table-border-color: $border-color;
 $table-head-color: $body-color;
 $table-tr-bg: $white;
+
+// Cards
+$card-border-color: rgba(black, .2);
+$card-cap-bg: $gray-200;
 
 // Modals
 $modal-content-bg: $gray-100;

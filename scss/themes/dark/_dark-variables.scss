@@ -102,9 +102,9 @@ $pagination-disabled-border: $gray-800;
 $jumbotron-bg: $gray-700;
 
 // Cards
-$card-border-color: rgba($white, .15);
-$card-cap-bg: rgba($white, .125);
-$card-bg: $gray-800;
+$card-border-color: $border-color;
+$card-cap-bg: $gray-700;
+$card-bg: $gray-900;
 
 // Tooltips
 $tooltip-bg: $body-bg;
@@ -136,9 +136,9 @@ $modal-footer-border-color: $modal-header-border-color;
 $progress-bg: $gray-700;
 
 // List groups
-$list-group-bg: $gray-800;
+$list-group-bg: $gray-900;
 $list-group-border-color: rgba($white, .125);
-$list-group-hover-bg: $gray-800;
+$list-group-hover-bg: $gray-900;
 $list-group-disabled-color: $gray-300;
 $list-group-disabled-bg: $list-group-bg;
 $list-group-action-color: $body-color;
@@ -147,13 +147,13 @@ $list-group-header-color: $body-color;
 
 // Image Thumbnails
 //$thumbnail-bg: transparent;
-$thumbnail-border: lighten($gray-800, 5%);
+$thumbnail-border: lighten($gray-900, 5%);
 
 // Breadcrumbs
 $breadcrumb-bg: $body-color;
 $breadcrumb-divider-color: $body-color;
 $breadcrumb-active-color: $body-color;
-$breadcrumb-bg: lighten($gray-800, 5%);
+$breadcrumb-bg: lighten($gray-900, 5%);
 $breadcrumb-active-color: $component-active-color;
 
 // Close

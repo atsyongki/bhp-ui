@@ -18,7 +18,7 @@ $link-color: $bhp_blue_4;
 $link-hover-color: lighten($link-color, 15%);
 
 // Components
-$border-color: rgba($white, .15);
+$border-color: rgba($white, .2);
 $component-active-color: $body-color;
 
 // Fonts
@@ -41,7 +41,7 @@ $table-head-color: $body-color;
 $table-tr-bg: $gray-700;
 
 // Forms
-$input-bg: $gray-900;
+$input-bg: map-get($colors, off-black);
 $input-disabled-bg: $gray-600;
 $input-color: $text-color;
 $input-border-color: $border-color;
@@ -57,9 +57,9 @@ $input-group-addon-bg: $gray-500;
 $input-group-addon-border-color: $border-color;
 
 $custom-select-color: $text-color;
-$custom-select-bg: $gray-900;
+$custom-select-bg: map-get($colors, off-black);
 //$custom-select-disabled-bg: darken($gray-900, 10%);
-$custom-control-indicator-bg: $gray-900;
+$custom-control-indicator-bg: map-get($colors, off-black);
 
 // Dropdowns
 //$dropdown-bg: $white !default;
@@ -125,7 +125,7 @@ $badge-color: $body-bg;
 $badge-bg: $white;
 
 // Modals
-$modal-content-bg: $gray-800;
+$modal-content-bg: $gray-900;
 $modal-content-border-color: $border-color;
 $modal-backdrop-bg: $black;
 $modal-backdrop-opacity: .7;
@@ -137,7 +137,7 @@ $progress-bg: $gray-700;
 
 // List groups
 $list-group-bg: $gray-900;
-$list-group-border-color: rgba($white, .125);
+$list-group-border-color: $border-color;
 $list-group-hover-bg: $gray-900;
 $list-group-disabled-color: $gray-300;
 $list-group-disabled-bg: $list-group-bg;
@@ -147,13 +147,13 @@ $list-group-header-color: $body-color;
 
 // Image Thumbnails
 //$thumbnail-bg: transparent;
-$thumbnail-border: lighten($gray-900, 5%);
+$thumbnail-border: $border-color;
 
 // Breadcrumbs
 $breadcrumb-bg: $body-color;
 $breadcrumb-divider-color: $body-color;
 $breadcrumb-active-color: $body-color;
-$breadcrumb-bg: lighten($gray-900, 5%);
+$breadcrumb-bg: $gray-900;
 $breadcrumb-active-color: $component-active-color;
 
 // Close

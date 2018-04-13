@@ -29,7 +29,7 @@ $card-border-color: rgba(black, .2);
 $card-cap-bg: $gray-200;
 
 // Modals
-$modal-content-bg: $gray-100;
+$modal-content-bg: map-get($colors, off-white);
 
 // Navs
 $nav-tabs-link-color: $body-color;

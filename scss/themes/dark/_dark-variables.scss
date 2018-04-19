@@ -45,34 +45,28 @@ $input-bg: $off-black;
 $input-disabled-bg: $gray-600;
 $input-color: $text-color;
 $input-border-color: $border-color;
-
-//$input-border: $border-color;
-
 $input-border-focus: $white;
-
 $input-color-placeholder: $gray-300;
-
 $input-group-addon-color: $text-color;
-$input-group-addon-bg: $gray-500;
+$input-group-addon-bg: $gray-600;
 $input-group-addon-border-color: $border-color;
-
 $custom-select-color: $text-color;
 $custom-select-bg: $off-black;
 //$custom-select-disabled-bg: darken($gray-900, 10%);
 $custom-control-indicator-bg: $off-black;
 
 // Dropdowns
-$dropdown-bg: $white !default;
-$dropdown-border-color: rgba($black, .15) !default;
-$dropdown-divider-bg: $gray-200 !default;
-$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
-$dropdown-link-color: $gray-900 !default;
-$dropdown-link-hover-color: darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg: $gray-100 !default;
-$dropdown-link-active-color: $component-active-color !default;
-$dropdown-link-active-bg: $component-active-bg !default;
-$dropdown-link-disabled-color: $gray-600 !default;
-$dropdown-header-color: $gray-600 !default;
+$dropdown-bg: $white;
+$dropdown-border-color: rgba($black, .15);
+$dropdown-divider-bg: $gray-200;
+$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175);
+$dropdown-link-color: $gray-900;
+$dropdown-link-hover-color: darken($gray-900, 5%);
+$dropdown-link-hover-bg: $gray-100;
+$dropdown-link-active-color: $component-active-color;
+$dropdown-link-active-bg: $component-active-bg;
+$dropdown-link-disabled-color: $gray-600;
+$dropdown-header-color: $gray-600;
 
 // Navs
 $nav-tabs-link-color: $body-color;

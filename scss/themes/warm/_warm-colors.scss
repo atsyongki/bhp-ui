@@ -4,13 +4,12 @@
 // Warm Theme Colors
 
 // Color system
-$off_white: #F5F4EE;
-//$white: #F9F8F5;
+$off_white: #f7f6f2;
 $gray-100: #FAF9F6;
 $gray-200: #EBE9E2;
-$gray-300: #EBE9E2;
-$gray-400: #DCDAD4;
-$gray-500: #CECCC6;
+$gray-300: #DCDAD4;
+$gray-400: #CECCC6;
+$gray-500: #A9A7A2;
 $gray-600: #7E7D79;
 $gray-700: #4B4A48;
 $gray-800: #3D3C3A;
@@ -30,7 +29,6 @@ $grays: map-merge($grays, (
 ));
 
 $colors: map-merge($colors, (
-        //"white": $white,
         "gray": $gray-600,
         "gray-dark": $gray-800,
         off-white: $off_white

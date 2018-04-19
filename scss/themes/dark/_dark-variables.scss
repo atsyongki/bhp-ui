@@ -4,13 +4,13 @@
 // Dark Theme Variables
 
 // Body
-$body-bg: map-get($colors, off-black);
+$body-bg: $gray-900;
 
 // Utils Colors
 $secondary: $gray-400;
 
 // Body
-$body-bg: $body-bg;
+//$body-bg: $body-bg;
 $body-color: $white;
 
 // Links
@@ -41,7 +41,7 @@ $table-head-color: $body-color;
 $table-tr-bg: $gray-700;
 
 // Forms
-$input-bg: map-get($colors, off-black);
+$input-bg: $off-black;
 $input-disabled-bg: $gray-600;
 $input-color: $text-color;
 $input-border-color: $border-color;
@@ -57,9 +57,9 @@ $input-group-addon-bg: $gray-500;
 $input-group-addon-border-color: $border-color;
 
 $custom-select-color: $text-color;
-$custom-select-bg: map-get($colors, off-black);
+$custom-select-bg: $off-black;
 //$custom-select-disabled-bg: darken($gray-900, 10%);
-$custom-control-indicator-bg: map-get($colors, off-black);
+$custom-control-indicator-bg: $off-black;
 
 // Dropdowns
 //$dropdown-bg: $white !default;
@@ -82,9 +82,9 @@ $nav-tabs-link-hover-border-color: $nav-tabs-border-color;
 
 // Pagination
 $pagination-color: $gray-700;
-$pagination-bg: $gray-900;
-$pagination-border-color: $gray-800;
-$pagination-hover-border-color: $gray-800;
+$pagination-bg: $gray-800;
+$pagination-border-color: $border-color;
+$pagination-hover-border-color: $border-color;
 
 $pagination-hover-color: $body-color;
 $pagination-hover-bg: $gray-800;
@@ -103,11 +103,11 @@ $jumbotron-bg: $gray-700;
 
 // Cards
 $card-border-color: $border-color;
-$card-cap-bg: $gray-700;
-$card-bg: $gray-900;
+$card-cap-bg: $gray-600;
+$card-bg: $gray-800;
 
 // Tooltips
-$tooltip-bg: $body-bg;
+$tooltip-bg: $gray-800;
 $tooltip-color: $gray-500;
 
 // Popovers
@@ -121,11 +121,11 @@ $popover-arrow-color: $popover-bg;
 $popover-arrow-outer-color: fade-in($popover-border-color, .05);
 
 // Badges
-$badge-color: $body-bg;
+$badge-color: $gray-800;
 $badge-bg: $white;
 
 // Modals
-$modal-content-bg: $gray-900;
+$modal-content-bg: $body-bg;
 $modal-content-border-color: $border-color;
 $modal-backdrop-bg: $black;
 $modal-backdrop-opacity: .7;
@@ -136,9 +136,9 @@ $modal-footer-border-color: $modal-header-border-color;
 $progress-bg: $gray-700;
 
 // List groups
-$list-group-bg: $gray-900;
+$list-group-bg: $gray-800;
 $list-group-border-color: $border-color;
-$list-group-hover-bg: $gray-900;
+$list-group-hover-bg: $gray-800;
 $list-group-disabled-color: $gray-300;
 $list-group-disabled-bg: $list-group-bg;
 $list-group-action-color: $body-color;
@@ -153,7 +153,7 @@ $thumbnail-border: $border-color;
 $breadcrumb-bg: $body-color;
 $breadcrumb-divider-color: $body-color;
 $breadcrumb-active-color: $body-color;
-$breadcrumb-bg: $gray-900;
+$breadcrumb-bg: $gray-800;
 $breadcrumb-active-color: $component-active-color;
 
 // Close

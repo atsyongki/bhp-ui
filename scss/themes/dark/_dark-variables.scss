@@ -35,7 +35,7 @@ $text-color: $body-color;
 // Tables
 $table-accent-bg: $gray-800;
 $table-hover-bg: $gray-900;
-$table-border-color: $gray-900;
+$table-border-color: $off-black;
 $table-head-bg: $gray-600;
 $table-head-color: $body-color;
 $table-tr-bg: $gray-700;
@@ -62,17 +62,17 @@ $custom-select-bg: $off-black;
 $custom-control-indicator-bg: $off-black;
 
 // Dropdowns
-//$dropdown-bg: $white !default;
-//$dropdown-border-color: rgba($black, .15) !default;
-//$dropdown-divider-bg: $gray-200 !default;
-//$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
-//$dropdown-link-color: $gray-900 !default;
-//$dropdown-link-hover-color: darken($gray-900, 5%) !default;
-//$dropdown-link-hover-bg: $gray-100 !default;
-//$dropdown-link-active-color: $component-active-color !default;
-//$dropdown-link-active-bg: $component-active-bg !default;
-//$dropdown-link-disabled-color: $gray-600 !default;
-//$dropdown-header-color: $gray-600 !default;
+$dropdown-bg: $white !default;
+$dropdown-border-color: rgba($black, .15) !default;
+$dropdown-divider-bg: $gray-200 !default;
+$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
+$dropdown-link-color: $gray-900 !default;
+$dropdown-link-hover-color: darken($gray-900, 5%) !default;
+$dropdown-link-hover-bg: $gray-100 !default;
+$dropdown-link-active-color: $component-active-color !default;
+$dropdown-link-active-bg: $component-active-bg !default;
+$dropdown-link-disabled-color: $gray-600 !default;
+$dropdown-header-color: $gray-600 !default;
 
 // Navs
 $nav-tabs-link-color: $body-color;

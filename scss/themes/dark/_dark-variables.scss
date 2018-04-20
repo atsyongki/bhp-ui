@@ -3,160 +3,61 @@
 
 // Dark Theme Variables
 
-// Body
-$body-bg: $gray-900;
-
-// Utils Colors
-$secondary: $gray-400;
-
-// Body
-//$body-bg: $body-bg;
-$body-color: $white;
-
 // Links
 $link-color: $bhp_blue_4;
 $link-hover-color: lighten($link-color, 15%);
 
-// Components
-$border-color: rgba($white, .2);
-$component-active-color: $body-color;
-
-// Fonts
-$headings-color: $body-color;
-$hr-border-color: $border-color;
-$text-muted: $body-color;
-
-// Scaffolding
-//$gray-subtle: $gray-300;
-$fa-inverse_color: $dark;
-$text-color: $body-color;
-//$btn-secondary-color: $gray-700;
-
 // Tables
-$table-accent-bg: $gray-800;
-$table-hover-bg: $gray-900;
-$table-border-color: $off-black;
-$table-head-bg: $gray-600;
-$table-head-color: $body-color;
-$table-tr-bg: $gray-700;
+$table-border-color: map-get($theme-colors, theme-darker-color);
+$table-head-bg: $gray-300;
+$table-tr-bg: $gray-200;
 
 // Forms
-$input-bg: $off-black;
-$input-disabled-bg: $gray-600;
-$input-color: $text-color;
-$input-border-color: $border-color;
+$input-bg: map-get($theme-colors, theme-darker-color);
+$input-disabled-bg: $gray-400;
+$input-color: $body-color;
 $input-border-focus: $white;
-$input-color-placeholder: $gray-300;
-$input-group-addon-color: $text-color;
-$input-group-addon-bg: $gray-600;
-$input-group-addon-border-color: $border-color;
-$custom-select-color: $text-color;
-$custom-select-bg: $off-black;
-//$custom-select-disabled-bg: darken($gray-900, 10%);
-$custom-control-indicator-bg: $off-black;
+$input-focus-color: $black;
+$input-color-placeholder: $gray-700;
+$input-group-addon-color: $body-color;
+$input-group-addon-bg: $gray-400;
+$custom-select-color: $body-color;
+$custom-select-bg: map-get($theme-colors, theme-darker-color);
+$custom-select-disabled-bg: $gray-400;
+$custom-control-indicator-bg: map-get($theme-colors, theme-darker-color);
 
 // Dropdowns
-$dropdown-bg: $white;
-$dropdown-border-color: rgba($black, .15);
-$dropdown-divider-bg: $gray-200;
-$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175);
-$dropdown-link-color: $gray-900;
-$dropdown-link-hover-color: darken($gray-900, 5%);
-$dropdown-link-hover-bg: $gray-100;
-$dropdown-link-active-color: $component-active-color;
-$dropdown-link-active-bg: $component-active-bg;
-$dropdown-link-disabled-color: $gray-600;
-$dropdown-header-color: $gray-600;
-
-// Navs
-$nav-tabs-link-color: $body-color;
-$nav-tabs-active-link-color: $body-color;
-$nav-tabs-border-color: $gray-500;
-$nav-tabs-link-hover-border-color: $nav-tabs-border-color;
-
-// Pagination
-$pagination-color: $gray-700;
-$pagination-bg: $gray-800;
-$pagination-border-color: $border-color;
-$pagination-hover-border-color: $border-color;
-
-$pagination-hover-color: $body-color;
-$pagination-hover-bg: $gray-800;
-$pagination-hover-border: $pagination-hover-bg;
-
-$pagination-active-color: $component-active-color;
-$pagination-active-bg: $gray-700;
-$pagination-active-border: $gray-700;
-
-$pagination-disabled-color: $gray-700;
-$pagination-disabled-bg: transparent;
-$pagination-disabled-border: $gray-800;
-
-// Jumbotron
-$jumbotron-bg: $gray-700;
+//$dropdown-bg: $white;
+//$dropdown-border-color: rgba($black, .15);
+//$dropdown-divider-bg: $gray-200;
+//$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175);
+//$dropdown-link-color: $gray-900;
+//$dropdown-link-hover-color: darken($gray-900, 5%);
+//$dropdown-link-hover-bg: $gray-100;
+//$dropdown-link-active-color: $component-active-color;
+//$dropdown-link-active-bg: $component-active-bg;
+//$dropdown-link-disabled-color: $gray-600;
+//$dropdown-header-color: $gray-600;
 
 // Cards
-$card-border-color: $border-color;
-$card-cap-bg: $gray-600;
-$card-bg: $gray-800;
+$card-cap-bg: $gray-300;
+$card-bg: $gray-100;
 
 // Tooltips
-$tooltip-bg: $gray-800;
-$tooltip-color: $gray-500;
+$tooltip-color: $black;
+$tooltip-bg: $white;
+$tooltip-arrow-color: $tooltip-bg;
 
 // Popovers
 $popover-bg: $gray-500;
-$popover-border-color: $border-color;
 $popover-header-bg: lighten($popover-bg, 3%);
-
-$popover-header-color: $headings-color;
-$popover-body-color: $body-color;
 $popover-arrow-color: $popover-bg;
-$popover-arrow-outer-color: fade-in($popover-border-color, .05);
 
-// Badges
-$badge-color: $gray-800;
-$badge-bg: $white;
-
-// Modals
-$modal-content-bg: $body-bg;
-$modal-content-border-color: $border-color;
-$modal-backdrop-bg: $black;
-$modal-backdrop-opacity: .7;
-$modal-header-border-color: $border-color;
-$modal-footer-border-color: $modal-header-border-color;
-
-// Progress bars
-$progress-bg: $gray-700;
 
 // List groups
-$list-group-bg: $gray-800;
-$list-group-border-color: $border-color;
-$list-group-hover-bg: $gray-800;
-$list-group-disabled-color: $gray-300;
+$list-group-bg: $gray-100;
+$list-group-hover-bg: $gray-100;
 $list-group-disabled-bg: $list-group-bg;
-$list-group-action-color: $body-color;
-$list-group-action-hover-color: $body-color;
-$list-group-header-color: $body-color;
-
-// Image Thumbnails
-//$thumbnail-bg: transparent;
-$thumbnail-border: $border-color;
-
-// Breadcrumbs
-$breadcrumb-bg: $body-color;
-$breadcrumb-divider-color: $body-color;
-$breadcrumb-active-color: $body-color;
-$breadcrumb-bg: $gray-800;
-$breadcrumb-active-color: $component-active-color;
 
 // Close
 $close-color: $body-color;
-$close-text-shadow: 0 1px 0 $black;
-
-// Alerts
-$alert-text-color: $body-color;
-$alert-link-color: $body-color;
-
-// Toggle Switch
-$toggle-switch-border-color: $body-color;

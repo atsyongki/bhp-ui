@@ -4,8 +4,8 @@
 // Light Theme Colors
 
 // Color system
-$off_white: #f2f4f5;
+$theme-bg-color: #f2f4f5;
 
-$colors: map-merge($colors, (
-        off-white: $off_white
+$theme-colors: map-merge($theme-colors, (
+        "theme-bg-color": $theme-bg-color
 ));

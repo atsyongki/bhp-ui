@@ -4,17 +4,15 @@
 // Dark Theme Colors
 
 // Color system
-$gray-100: #EBEBEB;
-$gray-200: #C8C8C8;
-$gray-300: #767684;
-$gray-400: #60606D;
-$gray-500: #5E5E6B;
-$gray-600: #525361;
-$gray-700: #4a4b58;
-$gray-800: #3F414E;
-$gray-900: #323442;
-$black: #111;
-$off_black: #282a38;
+$gray-100: #3F414E;
+$gray-200: #4a4b58;
+$gray-300: #525361;
+$gray-400: #5E5E6B;
+$gray-500: #60606D;
+$gray-600: #767684;
+$gray-700: #C8C8C8;
+$gray-800: #EBEBEB;
+$gray-900: #FFFFFF;
 
 $grays: map-merge($grays, (
         "100": $gray-100,
@@ -30,16 +28,19 @@ $grays: map-merge($grays, (
 
 $colors: map-merge($colors, (
         "gray": $gray-600,
-        "gray-dark": $gray-800,
-        off-black: $off_black
+        "gray-dark": $gray-800
 ));
 
-$secondary: $gray-300;
+$secondary: $gray-600;
 $light: $gray-100;
 $dark: $gray-800;
+$theme-bg-color: #323442;
+$theme-darker-color: #282a38;
 
 $theme-colors: map-merge($theme-colors, (
         "secondary": $secondary,
         "light": $light,
-        "dark": $dark
+        "dark": $dark,
+        "theme-bg-color": $theme-bg-color,
+        "theme-darker-color": $theme-darker-color
 ));

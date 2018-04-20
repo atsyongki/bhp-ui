@@ -18,15 +18,73 @@ $font-size-xs: .875rem;
   }
 }
 
+// Body
+$body-bg: map-get($theme-colors, theme-bg-color);
+
+// Links
+$link-color: $bhp_blue_3;
+
+// Components
+$border-color: rgba($gray-900, .2);
+
+// Fonts
+$text-muted: $body-color;
+$hr-border-color: $border-color;
+
+// Scaffolding
+$fa-inverse_color: $light;
+
+// Tables
+$table-accent-bg: $gray-100;
+$table-border-color: $border-color;
+$table-head-color: $body-color;
+$table-tr-bg: $white;
+
+// Forms
+$input-border-color: $border-color;
+$input-group-addon-border-color: $border-color;
+
+// Cards
+$card-border-color: $border-color;
+$card-cap-bg: $gray-200;
+
+// Modals
+$modal-content-bg: $body-bg;
+
+// Navs
+$nav-tabs-border-color: $border-color;
+$nav-tabs-link-color: $body-color;
+$nav-tabs-link-hover-border-color: $nav-tabs-border-color;
+$nav-tabs-active-link-color: $body-color;
+
+// Popovers
+$popover-border-color: $border-color;
+$popover-arrow-outer-color: fade-in($popover-border-color, .05);
+
+// Modals
+$modal-content-border-color: $border-color;
+$modal-header-border-color: $border-color;
+$modal-footer-border-color: $modal-header-border-color;
+
+// List Group
+$list-group-border-color: $border-color;
+$list-group-action-color: $body-color;
+$list-group-action-hover-color: $body-color;
+$list-group-header-color: $body-color;
+
+// Alerts
+$alert-text-color: $body-color;
+$alert-link-color: $body-color;
+
+// Progress bars
+$progress-bg: $gray-300;
+
 // Buttons
 $btn-font-weight: $font-weight-bold;
 
 // Pagination
-//$pagination-bg: none;
-//$pagination-border-width: 0;
 $pagination-active-color: map-get($theme-colors, primary);
 $pagination-active-color: map-get($theme-colors, primary);
-//$pagination-active-bg: none;
 
 // Nav Tabs
 $nav-tabs-border-radius: 0;
@@ -39,6 +97,7 @@ $btn-disabled-opacity: 0.2;
 // Toggle Switch
 $toggle-switch-padding: 1px;
 $toggle-switch-border-width: 1px;
+$toggle-switch-border-color: $body-color;
 $toggle-switch-outer-height: 28px;
 $toggle-switch-font-size: 0.75rem;
 
@@ -49,8 +108,8 @@ $spinner-size-lg: 6rem;
 
 // List Group
 $list-group-active-color: $black;
-$list-group-active-bg: map-get($colors, selected);
-$list-group-active-bg-hover: map-get($colors, selected-hover);
+$list-group-active-bg: map-get($theme-colors, selected-item);
+$list-group-active-bg-hover: map-get($theme-colors, selected-item-hover);
 $list-group-active-border-color: $list-group-border-color;
 
 // Nav link

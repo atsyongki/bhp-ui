@@ -4,7 +4,7 @@
 .btn[disabled],
 fieldset[disabled] .btn {
   color: $body-color !important;
-  background-color: rgba($body-color, .2) !important;
+  background-color: rgba($body-color, .3) !important;
   border-color: $border-color !important;
   cursor: not-allowed !important;
   opacity: .3 !important;

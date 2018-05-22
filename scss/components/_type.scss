@@ -16,3 +16,12 @@ a {
 .fa-inverse {
    color: $fa-inverse_color;
  }
+
+@each $item in $bhp-colors {
+  .text-#{nth($item, 1)} {
+    color: nth($item, 2) !important;
+  }
+  .bg-#{nth($item, 1)} {
+    background-color: nth($item, 2) !important;
+  }
+}

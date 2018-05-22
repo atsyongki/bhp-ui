@@ -49,12 +49,13 @@ $sidebar-width: 240px;
     position: relative;
     display: block;
     border-left: 5px solid transparent;
-    padding: 16px 16px 16px 45px;
+    padding: 20px 20px 15px 45px;
     //font-size: 14px;
     color: $gray-500;
     text-decoration: none;
     user-select: none;
     cursor: pointer;
+    font-weight: bold;
 
     &:hover {
       color: $body-bg;
@@ -75,7 +76,13 @@ $sidebar-width: 240px;
       right: 15px;
     }
   }
-
+  .sub-links {
+    .link {
+      font-weight: normal;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
   .active-link {
     border-left: 5px solid $bhp_orange_1;
     color: $body-bg;

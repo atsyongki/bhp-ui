@@ -1,6 +1,6 @@
 {
   "name": "bhp-ui",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "index.js",
   "peerDependencies": {
     "bootstrap": "4.0.0"

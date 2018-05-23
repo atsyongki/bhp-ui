@@ -1,5 +1,5 @@
 {
-  "name": "@bhp/ui",
+  "name": "bhp-ui",
   "version": "3.0.0",
   "main": "index.js",
   "peerDependencies": {

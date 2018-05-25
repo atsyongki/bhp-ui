@@ -12,7 +12,7 @@ some extra components.
 If you are using `npm` or `yarn` in your project, run:
 
 ```
-yarn add bhp-ui bootstrap
+yarn add @bhp/ui bootstrap
 ```
 
 Then import the SASS file below in your project:

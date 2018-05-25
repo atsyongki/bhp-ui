@@ -9,12 +9,22 @@
     "bootstrap": "^4.1.1"
   },
   "scripts": {
-    "build": "node-sass -r scss/ -o css/",
+    "build": "npm-run-all clean build:scss copy:scss copy:package",
+    "build:scss": "node-sass -r scss/ -o ./dist/css",
+    "copy:scss": "cpy --parents scss/**/*.scss ./dist",
+    "copy:package": "cpy npm/**/* ./dist",
+    "clean": "del ./dist",
     "test": "echo no test yet",
-    "release": "standard-version"
+    "release": "cd ./npm && standard-version --infile ../CHANGELOG.md"
   },
   "devDependencies": {
+    "cpy-cli": "^1.0.1",
+    "del-cli": "^1.1.0",
     "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.3",
     "standard-version": "^4.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1"
   }
 }

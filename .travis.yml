@@ -2,7 +2,11 @@ language: node_js
 node_js:
   - "node"
 before_install:
-  - npm i -g makeshift && makeshift -s @bhp -r https://registry.npmjs.org
+  - yarn global add makeshift && makeshift -s @bhp -r https://registry.npmjs.org
+script:
+  - yarn run build
+before_deploy:
+    - cd dist
 deploy:
   provider: npm
   email: Achmad.Satriawardhana@bhp.com
@@ -10,3 +14,5 @@ deploy:
   on:
     tags: true
     all_branches: true
+
+

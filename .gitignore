@@ -71,3 +71,4 @@ fabric.properties
 .idea/
 
 yarn-error.log
+node_modules/

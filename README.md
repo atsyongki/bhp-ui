@@ -1,5 +1,9 @@
 # BHP UI
 
+<!-- Badges section here. -->
+[![Build Status](https://travis-ci.org/BHP-DevHub/bhp-ui.svg?branch=master)](https://travis-ci.org/BHP-DevHub/bhp-ui)
+[![npm version](https://badge.fury.io/js/%40bhp%2Fui.svg)](https://badge.fury.io/js/%40bhp%2Fui)
+
 BHP UI library. A customised Bootstrap deployment with three themes, along with
 some extra components.
 

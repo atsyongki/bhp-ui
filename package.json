@@ -12,7 +12,7 @@
     "build": "npm-run-all clean build:scss copy:scss copy:package",
     "build:scss": "node-sass -r scss/ -o ./dist/css",
     "copy:scss": "cpy --parents scss/**/*.scss ./dist",
-    "copy:package": "cpy npm/**/* ./dist",
+    "copy:package": "cpy npm/**/* README.md ./dist",
     "clean": "del ./dist",
     "test": "echo no test yet",
     "release": "cd ./npm && standard-version --infile ../CHANGELOG.md"

@@ -5,7 +5,8 @@ before_install:
   - npm i -g makeshift && makeshift -s @bhp -r https://registry.npmjs.org
 deploy:
   provider: npm
-  email: ben@npmjs.com
+  email: Achmad.Satriawardhana@bhp.com
   api_key: $NPM_TOKEN
   on:
     tags: true
+    all_branches: true

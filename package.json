@@ -1,6 +1,6 @@
 {
   "name": "@bhp/ui",
-  "version": "6.0.0",
+  "version": "6.0.2",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "node-sass -r scss/ -o css/",
+    "test": "echo no test yet",
     "release": "standard-version"
   },
   "devDependencies": {

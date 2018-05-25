@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "node-sass -r scss/ -o css/",
+    "test": "echo no test yet",
     "release": "standard-version"
   },
   "devDependencies": {

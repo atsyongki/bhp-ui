@@ -1,0 +1,122 @@
+
+$sidebar-width: 240px;
+
+.outer {
+  width: $sidebar-width;
+  background-color: $gray-800;
+  z-index: 9;
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: all .3s ease-out;
+  display: flex !important;
+  flex-direction: column;
+  height: 100vh;
+
+  .logo-outer {
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+    padding: 16px 0;
+    background-color: $bhp_orange_1;
+    z-index: 1;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .selected-entry {
+    background-color: $gray-900;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: RGBA(0, 0, 0, 0.6);
+  }
+
+  .entries {
+    overflow: auto;
+    flex-grow: 1;
+    height: auto;
+  }
+}
+
+.entry {
+  .link {
+    position: relative;
+    display: block;
+    border-left: 5px solid transparent;
+    padding: 20px 20px 15px 45px;
+    //font-size: 14px;
+    color: $gray-500;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      color: $body-bg;
+      background-color: $gray-700;
+      text-decoration: none;
+    }
+
+    .link-icon {
+      position: absolute;
+      left: 15px;
+      font-size: 18px;
+    }
+
+    .toggle {
+      position: absolute;
+      font-size: 18px;
+      //top: 15px;
+      right: 15px;
+    }
+  }
+  .sub-links {
+    .link {
+      font-weight: normal;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .active-link {
+    border-left: 5px solid $bhp_orange_1;
+    color: $body-bg;
+
+    &:hover {
+      color: $body-bg;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide-side-bar {
+    left: -$sidebar-width;
+    position: fixed;
+    height: 100vh;
+    z-index: 99;
+  }
+
+  .outer {
+    height: 100vh;
+    position: fixed;
+
+    &.hide-side-bar {
+      .overlay {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .outer {
+    .overlay {
+      display: none;
+    }
+  }
+}

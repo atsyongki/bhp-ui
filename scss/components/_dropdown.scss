@@ -1,0 +1,10 @@
+
+.dropdown-menu {
+  .dropdown-item {
+    cursor: pointer;
+    a {
+      color: $body-color;
+      text-decoration: none;
+    }
+  }
+}

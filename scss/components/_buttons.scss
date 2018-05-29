@@ -1,5 +1,24 @@
 
-// Disabled Styles
+a.btn,
+button.btn {
+  &.btn-outline,
+  &.btn-outline-secondary {
+    @extend .btn-outline-dark;
+    border: 1px solid rgba($body-color, 0.4);
+    &:focus,
+    &:hover {
+      background: rgba($body-color, 0.2);
+      border: 1px solid rgba($gray-700, 0.4);
+      color: $body-color !important;
+    }
+    &:active,
+    &.active {
+      color: $body-bg !important;
+    }
+  }
+}
+
+ //Disabled Styles
 .btn.disabled,
 .btn[disabled],
 fieldset[disabled] .btn {

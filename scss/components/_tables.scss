@@ -27,4 +27,26 @@
       }
     }
   }
+
+  .table-success,
+  .table-success > th,
+  .table-success > td {
+    background-color: rgba(theme-color("success"), 0.25);
+  }
+  .table-info,
+  .table-info > th,
+  .table-info > td {
+    background-color: rgba(theme-color("info"), 0.25);
+  }
+  .table-warning,
+  .table-warning > th,
+  .table-warning > td {
+    background-color: rgba(theme-color("warning"), 0.25);
+  }
+  .table-danger,
+  .table-danger > th,
+  .table-danger > td {
+    background-color: rgba(theme-color("danger"), 0.25);
+  }
+
 }

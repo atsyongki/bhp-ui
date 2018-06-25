@@ -11,7 +11,7 @@
   "scripts": {
     "build": "npm-run-all clean build:scss copy:scss copy:package",
     "build:scss": "node-sass -r scss/ -o ./dist/css",
-    "copy:scss": "cpy **/*.scss ../dist/scss --cwd=scss --parents",
+    "copy:scss": "cpy '**/*.scss' '../dist/scss' --cwd=scss --parents",
     "copy:package": "cpy npm/**/* README.md CHANGELOG.md ./dist",
     "clean": "del-cli ./dist",
     "test": "echo no test yet",

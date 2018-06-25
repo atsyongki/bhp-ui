@@ -14,11 +14,11 @@ before_deploy:
   - cd dist
 deploy:
   provider: npm
-  tag: $( if [[ "$TRAVIS_TAG" = *"-"* ]]; then
+  tag: - if [[ "$TRAVIS_TAG" = *"-"* ]]; then
                echo "next"
              else
                echo "latest"
-             fi)
+             fi
   email: Achmad.Satriawardhana@bhp.com
   api_key: $NPM_TOKEN
   skip_cleanup: true

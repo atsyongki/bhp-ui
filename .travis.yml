@@ -17,8 +17,9 @@ before_deploy: |
     else
       echo "latest"
     fi
-    cd dist
   }
+  - cd dist
+
 deploy:
   provider: npm
   tag: $(npm_dist_tag)

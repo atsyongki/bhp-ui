@@ -10,19 +10,15 @@ before_install:
 script:
   - yarn run build
 # Identifies `a.b.c-xxx.n` tags as pre-releases, and `a.b.c` as stable releases
-before_deploy: |
-  function npm_dist_tag() {
-    if [[ "$TRAVIS_TAG" = *"-"* ]]; then
-      echo "next"
-    else
-      echo "latest"
-    fi
-  }
+before_deploy:
   - cd dist
-
 deploy:
   provider: npm
-  tag: $(npm_dist_tag)
+  tag: $( if [[ "$TRAVIS_TAG" = *"-"* ]]; then
+               echo "next"
+             else
+               echo "latest"
+             fi)
   email: Achmad.Satriawardhana@bhp.com
   api_key: $NPM_TOKEN
   skip_cleanup: true

@@ -10,7 +10,7 @@ before_install:
 script:
   - yarn run build
 # Identifies `a.b.c-xxx.n` tags as pre-releases, and `a.b.c` as stable releases
-before_deploy:
+before_deploy: |
   - cd dist
   function npm_dist_tag() {
     if [[ "$TRAVIS_TAG" = *"-"* ]]; then

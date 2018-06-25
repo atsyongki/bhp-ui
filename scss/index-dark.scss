@@ -1,7 +1,5 @@
 @import 'base';
 @import 'themes/dark/dark-colors';
 @import 'themes/dark/dark-variables';
-
-.dark-theme {
-  @import 'components';
-}
+@import 'index-shared';
+@import 'components';

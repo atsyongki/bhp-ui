@@ -1,23 +1,4 @@
 a.btn,
-button.btn:not(.btn-inline-block ) {
-  display: inline;
-
-}
-
-a.btn:not(.btn-inline-block) {
-  padding-top: .525rem;
-  padding-bottom: .525rem;
-  &.btn-xs, &.btn-sm {
-    padding-top: .375rem;
-    padding-bottom: .375rem;
-  }
-  &.btn-lg, &.btn-lg {
-    padding-top: .675rem;
-    padding-bottom: .675rem;
-  }
-}
-
-a.btn,
 button.btn {
   &.btn-outline,
   &.btn-outline-secondary {

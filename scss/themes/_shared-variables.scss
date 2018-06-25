@@ -1,26 +1,11 @@
 // Shared Variables
-
-html {
-  body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
-  }
-}
-
 $font-family-base: 'Roboto', Arial, sans-serif;
 $font-size-xs: .875rem;
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1rem;
-  }
-}
 
 // Body
 $body-bg: map-get($theme-colors, theme-bg-color);
-
+$body-color: $gray-900;
 // Links
 $link-color: $bhp_blue_3;
 
